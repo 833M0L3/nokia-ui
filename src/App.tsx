@@ -50,10 +50,10 @@ export default function App() {
     if (activeApp === 'apps') {
       const codeMap = { UP: 'ArrowUp', DOWN: 'ArrowDown', LEFT: 'ArrowLeft', RIGHT: 'ArrowRight' };
       dispatchHwKey(codeMap[dir], isDown);
+    } else {
+      // Emit universal navigation event for inner app components (Gallery, Web, Settings, Menu)
+      window.dispatchEvent(new CustomEvent('nokia-ui-navigate', { detail: { dir, isDown } }));
     }
-
-    // Emit universal navigation event for all inner app components
-    window.dispatchEvent(new CustomEvent('nokia-ui-navigate', { detail: { dir, isDown } }));
 
     if (!activeApp && isDown) {
       setSelectedIndex((prev) => {
@@ -75,11 +75,12 @@ export default function App() {
   const handleSelect = (isDown: boolean = true) => {
     if (activeApp === 'apps') {
       dispatchHwKey('Enter', isDown);
+    } else {
+      if (isDown) {
+        playSelectBeep(settings.soundEnabled);
+      }
+      window.dispatchEvent(new CustomEvent('nokia-ui-center-select', { detail: { isDown } }));
     }
-    if (isDown) {
-      playSelectBeep(settings.soundEnabled);
-    }
-    window.dispatchEvent(new CustomEvent('nokia-ui-center-select', { detail: { isDown } }));
   };
 
   const handleSoftkeyLeft = (isDown: boolean = true) => {
@@ -88,8 +89,9 @@ export default function App() {
     }
     if (activeApp === 'apps') {
       dispatchHwKey('F1', isDown);
+    } else {
+      window.dispatchEvent(new CustomEvent('nokia-ui-left-softkey', { detail: { isDown } }));
     }
-    window.dispatchEvent(new CustomEvent('nokia-ui-left-softkey', { detail: { isDown } }));
   };
 
   const handleSoftkeyRight = (isDown: boolean = true) => {
@@ -98,9 +100,9 @@ export default function App() {
     }
     if (activeApp === 'apps') {
       dispatchHwKey('F2', isDown);
+    } else {
+      window.dispatchEvent(new CustomEvent('nokia-ui-right-softkey', { detail: { isDown } }));
     }
-    // Emit softkey right event so inner apps handle step-by-step back navigation
-    window.dispatchEvent(new CustomEvent('nokia-ui-right-softkey', { detail: { isDown } }));
   };
 
   const handleEndCallKey = (isDown: boolean = true) => {

@@ -63,7 +63,8 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
       setIsOptionsOpen(false);
     };
 
-    const handleCenterSelect = () => {
+    const handleCenterSelect = (e: CustomEvent) => {
+      if (e.detail?.isDown === false) return;
       if (isGameRunning) return; // Active game handles Center Select
       if (screenView === 'home') {
         setScreenView('menu');
@@ -72,7 +73,8 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
       }
     };
 
-    const handleLeftSoftkey = () => {
+    const handleLeftSoftkey = (e: CustomEvent) => {
+      if (e.detail?.isDown === false) return;
       if (isGameRunning) return; // Active game handles Left Softkey (F1)
       if (screenView === 'menu' || screenView === 'app') {
         setIsOptionsOpen((prev) => !prev);
@@ -81,7 +83,8 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
       }
     };
 
-    const handleRightSoftkey = () => {
+    const handleRightSoftkey = (e: CustomEvent) => {
+      if (e.detail?.isDown === false) return;
       if (isGameRunning) return; // Active game handles Right Softkey (F2)
       if (!activeApp) {
         if (screenView === 'menu') {
@@ -93,15 +96,15 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
     };
 
     window.addEventListener('nokia-go-home', handleGoHome);
-    window.addEventListener('nokia-ui-center-select', handleCenterSelect);
-    window.addEventListener('nokia-ui-left-softkey', handleLeftSoftkey);
-    window.addEventListener('nokia-ui-right-softkey', handleRightSoftkey);
+    window.addEventListener('nokia-ui-center-select' as any, handleCenterSelect as any);
+    window.addEventListener('nokia-ui-left-softkey' as any, handleLeftSoftkey as any);
+    window.addEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey as any);
 
     return () => {
       window.removeEventListener('nokia-go-home', handleGoHome);
-      window.removeEventListener('nokia-ui-center-select', handleCenterSelect);
-      window.removeEventListener('nokia-ui-left-softkey', handleLeftSoftkey);
-      window.removeEventListener('nokia-ui-right-softkey', handleRightSoftkey);
+      window.removeEventListener('nokia-ui-center-select' as any, handleCenterSelect as any);
+      window.removeEventListener('nokia-ui-left-softkey' as any, handleLeftSoftkey as any);
+      window.removeEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey as any);
     };
   }, [activeApp, screenView, selectedItem, isGameRunning, onCloseApp]);
 

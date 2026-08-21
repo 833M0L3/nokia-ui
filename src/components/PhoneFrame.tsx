@@ -23,15 +23,18 @@ export const PhoneFrame: React.FC<PhoneFrameProps> = ({
 }) => {
   const bindHoldableKey = (action: (isDown: boolean) => void) => {
     return {
-      onPointerDown: (e: React.PointerEvent) => {
+      type: 'button' as const,
+      tabIndex: -1,
+      onPointerDown: (e: React.PointerEvent<HTMLButtonElement>) => {
+        e.preventDefault();
         try {
-          (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
+          e.currentTarget.setPointerCapture?.(e.pointerId);
         } catch (_) {}
         action(true);
       },
-      onPointerUp: (e: React.PointerEvent) => {
+      onPointerUp: (e: React.PointerEvent<HTMLButtonElement>) => {
         try {
-          (e.currentTarget as HTMLElement).releasePointerCapture?.(e.pointerId);
+          e.currentTarget.releasePointerCapture?.(e.pointerId);
         } catch (_) {}
         action(false);
       },

@@ -48,16 +48,6 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
         },
         '*'
       );
-      iframeRef.current.contentWindow.postMessage(
-        {
-          type: 'CHEERP_KEY_EVENT',
-          eventType: isDown ? 'keydown' : 'keyup',
-          isDown,
-          code,
-          key: key || code,
-        },
-        '*'
-      );
     }
   };
 
@@ -160,7 +150,7 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
     };
   }, [games, selectedIndex, selectedGame, isLaunching, soundEnabled, onBack]);
 
-  // Listen to Nokia hardware frame events, softkeys, navigation & end key
+  // Listen to Nokia hardware casing events (D-Pad, softkeys, keypad, call keys)
   useEffect(() => {
     const handleHardwareKey = (e: CustomEvent) => {
       const { code, key, isDown = true } = e.detail || {};
@@ -193,57 +183,10 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
       }
     };
 
-    const handleNavigate = (e: CustomEvent) => {
-      const { dir, isDown = true } = e.detail || {};
-      if (selectedGame && !isLaunching) {
-        const dirMap: Record<string, string> = {
-          UP: 'ArrowUp',
-          DOWN: 'ArrowDown',
-          LEFT: 'ArrowLeft',
-          RIGHT: 'ArrowRight',
-        };
-        if (dir && dirMap[dir]) {
-          sendKeyToIframe(dirMap[dir], isDown);
-        }
-      }
-    };
-
-    const handleCenterSelect = (e: CustomEvent) => {
-      const isDown = e.detail?.isDown ?? true;
-      if (selectedGame && !isLaunching) {
-        sendKeyToIframe('Enter', isDown);
-      }
-    };
-
-    const handleLeftSoftkey = (e: CustomEvent) => {
-      const isDown = e.detail?.isDown ?? true;
-      if (selectedGame && !isLaunching) {
-        sendKeyToIframe('F1', isDown);
-      }
-    };
-
-    const handleRightSoftkey = (e: CustomEvent) => {
-      const isDown = e.detail?.isDown ?? true;
-      if (selectedGame && !isLaunching) {
-        sendKeyToIframe('F2', isDown);
-      } else if (!selectedGame && isDown) {
-        playKeyClick(soundEnabled);
-        onBack();
-      }
-    };
-
     window.addEventListener('nokia-hw-key' as any, handleHardwareKey);
-    window.addEventListener('nokia-ui-navigate' as any, handleNavigate);
-    window.addEventListener('nokia-ui-center-select' as any, handleCenterSelect);
-    window.addEventListener('nokia-ui-left-softkey' as any, handleLeftSoftkey);
-    window.addEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey);
 
     return () => {
       window.removeEventListener('nokia-hw-key' as any, handleHardwareKey);
-      window.removeEventListener('nokia-ui-navigate' as any, handleNavigate);
-      window.removeEventListener('nokia-ui-center-select' as any, handleCenterSelect);
-      window.removeEventListener('nokia-ui-left-softkey' as any, handleLeftSoftkey);
-      window.removeEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey);
     };
   }, [selectedGame, isLaunching, games, selectedIndex, soundEnabled, onBack]);
 
