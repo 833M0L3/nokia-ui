@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Music, Radio } from 'lucide-react';
 import { PhoneSettings } from '../types';
 
 interface HomeScreenProps {
@@ -96,7 +97,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ settings, onOpenMenu, on
             onClick={() => onOpenApp?.('media')}
             className="flex items-center gap-1.5 cursor-pointer hover:text-cyan-300"
           >
-            <span className="text-red-400">🎵</span>
+            <Music className="w-3.5 h-3.5 text-rose-400" />
             <span>Music player off</span>
           </div>
 
@@ -104,7 +105,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ settings, onOpenMenu, on
             onClick={() => onOpenApp?.('media')}
             className="flex items-center gap-1.5 cursor-pointer hover:text-cyan-300"
           >
-            <span className="text-cyan-400">📻</span>
+            <Radio className="w-3.5 h-3.5 text-cyan-400" />
             <span>Radio off</span>
           </div>
 

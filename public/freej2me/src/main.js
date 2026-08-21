@@ -117,17 +117,9 @@ function setListeners() {
             const targetCode = keyAliasMap[code] || code;
 
             if (codeMap[targetCode]) {
-                const charCode = (e.data.key && e.data.key.length === 1) ? e.data.key.charCodeAt(0) : 0;
+                const charCode = (e.data.key && typeof e.data.key === 'string' && e.data.key.length === 1) ? e.data.key.charCodeAt(0) : '\x00';
                 
-                // Direct queue into FreeJ2ME Java Event Queue
-                if (evtQueue) {
-                    evtQueue.queueEvent({
-                        kind: isDown ? 'keydown' : 'keyup',
-                        args: [codeMap[targetCode], charCode, false, false]
-                    });
-                }
-                
-                // Also update keyRepeatManager
+                // Route through KeyRepeatManager for consistent initial press, holding repeat, and keyup release
                 keyRepeatManager.post(isDown, targetCode, {
                     symbol: charCode,
                     ctrlKey: false,

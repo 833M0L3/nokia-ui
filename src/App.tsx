@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Smartphone, Monitor, Volume2, VolumeX, Move, PhoneOff } from 'lucide-react';
 import { AppId, MenuItem, PhoneSettings } from './types';
 import { NokiaScreen } from './components/NokiaScreen';
 import { PhoneFrame } from './components/PhoneFrame';
@@ -33,26 +34,28 @@ export default function App() {
   const [viewStyle, setViewStyle] = useState<'phone' | 'screen'>('phone');
 
   // Dispatch hardware key events to active J2ME game
-  const dispatchHwKey = (code: string, key?: string) => {
+  const dispatchHwKey = (code: string, isDown: boolean = true, key?: string) => {
     window.dispatchEvent(
       new CustomEvent('nokia-hw-key', {
-        detail: { code, key },
+        detail: { code, key, isDown },
       })
     );
   };
 
   // Handle D-Pad Navigation Universal Dispatcher
-  const handleNavigate = (dir: 'UP' | 'DOWN' | 'LEFT' | 'RIGHT') => {
-    playKeyClick(settings.soundEnabled);
+  const handleNavigate = (dir: 'UP' | 'DOWN' | 'LEFT' | 'RIGHT', isDown: boolean = true) => {
+    if (isDown) {
+      playKeyClick(settings.soundEnabled);
+    }
     if (activeApp === 'apps') {
       const codeMap = { UP: 'ArrowUp', DOWN: 'ArrowDown', LEFT: 'ArrowLeft', RIGHT: 'ArrowRight' };
-      dispatchHwKey(codeMap[dir]);
+      dispatchHwKey(codeMap[dir], isDown);
     }
 
     // Emit universal navigation event for all inner app components
-    window.dispatchEvent(new CustomEvent('nokia-ui-navigate', { detail: { dir } }));
+    window.dispatchEvent(new CustomEvent('nokia-ui-navigate', { detail: { dir, isDown } }));
 
-    if (!activeApp) {
+    if (!activeApp && isDown) {
       setSelectedIndex((prev) => {
         let next = prev;
         if (dir === 'LEFT') {
@@ -69,46 +72,58 @@ export default function App() {
     }
   };
 
-  const handleSelect = () => {
+  const handleSelect = (isDown: boolean = true) => {
     if (activeApp === 'apps') {
-      dispatchHwKey('Enter');
+      dispatchHwKey('Enter', isDown);
     }
-    playSelectBeep(settings.soundEnabled);
-    window.dispatchEvent(new CustomEvent('nokia-ui-center-select'));
+    if (isDown) {
+      playSelectBeep(settings.soundEnabled);
+    }
+    window.dispatchEvent(new CustomEvent('nokia-ui-center-select', { detail: { isDown } }));
   };
 
-  const handleSoftkeyLeft = () => {
-    playKeyClick(settings.soundEnabled);
-    if (activeApp === 'apps') {
-      dispatchHwKey('F1');
+  const handleSoftkeyLeft = (isDown: boolean = true) => {
+    if (isDown) {
+      playKeyClick(settings.soundEnabled);
     }
-    window.dispatchEvent(new CustomEvent('nokia-ui-left-softkey'));
+    if (activeApp === 'apps') {
+      dispatchHwKey('F1', isDown);
+    }
+    window.dispatchEvent(new CustomEvent('nokia-ui-left-softkey', { detail: { isDown } }));
   };
 
-  const handleSoftkeyRight = () => {
-    playKeyClick(settings.soundEnabled);
+  const handleSoftkeyRight = (isDown: boolean = true) => {
+    if (isDown) {
+      playKeyClick(settings.soundEnabled);
+    }
     if (activeApp === 'apps') {
-      dispatchHwKey('F2');
+      dispatchHwKey('F2', isDown);
     }
     // Emit softkey right event so inner apps handle step-by-step back navigation
-    window.dispatchEvent(new CustomEvent('nokia-ui-right-softkey'));
+    window.dispatchEvent(new CustomEvent('nokia-ui-right-softkey', { detail: { isDown } }));
   };
 
-  const handleEndCallKey = () => {
-    playKeyClick(settings.soundEnabled);
-    if (activeApp === 'apps') {
-      dispatchHwKey('EndCallKey');
+  const handleEndCallKey = (isDown: boolean = true) => {
+    if (isDown) {
+      playKeyClick(settings.soundEnabled);
+      if (activeApp === 'apps') {
+        dispatchHwKey('EndCallKey', true);
+      }
+      setActiveApp(null);
+      window.dispatchEvent(new CustomEvent('nokia-go-home'));
+    } else if (activeApp === 'apps') {
+      dispatchHwKey('EndCallKey', false);
     }
-    setActiveApp(null);
-    window.dispatchEvent(new CustomEvent('nokia-go-home'));
   };
 
-  const handleNumKey = (num: string) => {
-    playKeyClick(settings.soundEnabled);
+  const handleNumKey = (num: string, isDown: boolean = true) => {
+    if (isDown) {
+      playKeyClick(settings.soundEnabled);
+    }
     if (activeApp === 'apps') {
-      if (num === '*') dispatchHwKey('NumpadAsterisk', '*');
-      else if (num === '#') dispatchHwKey('NumpadDivide', '#');
-      else dispatchHwKey(`Digit${num}`, num);
+      if (num === '*') dispatchHwKey('NumpadAsterisk', isDown, '*');
+      else if (num === '#') dispatchHwKey('NumpadDivide', isDown, '#');
+      else dispatchHwKey(`Digit${num}`, isDown, num);
     }
   };
 
@@ -119,16 +134,26 @@ export default function App() {
         return;
       }
 
-      if (e.key === 'ArrowUp') handleNavigate('UP');
-      else if (e.key === 'ArrowDown') handleNavigate('DOWN');
-      else if (e.key === 'ArrowLeft') handleNavigate('LEFT');
-      else if (e.key === 'ArrowRight') handleNavigate('RIGHT');
-      else if (e.key === 'Enter' || e.key === ' ') handleSelect();
-      else if (e.key === 'F1' || e.key === 'q' || e.key === 'Q') handleSoftkeyLeft();
-      else if (e.key === 'F2' || e.key === 'w' || e.key === 'W') handleSoftkeyRight();
-      else if (e.key === 'Escape' || e.key === 'Backspace') handleEndCallKey();
+      // In game mode, J2meRunnerApp handles keydown/keyup directly to allow continuous holds
+      if (activeApp === 'apps') {
+        if (e.key === 'Escape') {
+          handleEndCallKey(true);
+        }
+        return;
+      }
+
+      if (e.repeat) return; // Prevent repeated navigation jumps on holding in main menu
+
+      if (e.key === 'ArrowUp') handleNavigate('UP', true);
+      else if (e.key === 'ArrowDown') handleNavigate('DOWN', true);
+      else if (e.key === 'ArrowLeft') handleNavigate('LEFT', true);
+      else if (e.key === 'ArrowRight') handleNavigate('RIGHT', true);
+      else if (e.key === 'Enter' || e.key === ' ') handleSelect(true);
+      else if (e.key === 'F1' || e.key === 'q' || e.key === 'Q') handleSoftkeyLeft(true);
+      else if (e.key === 'F2' || e.key === 'w' || e.key === 'W') handleSoftkeyRight(true);
+      else if (e.key === 'Escape' || e.key === 'Backspace') handleEndCallKey(true);
       else if (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '*', '#'].includes(e.key)) {
-        handleNumKey(e.key);
+        handleNumKey(e.key, true);
       }
     };
 
@@ -156,23 +181,25 @@ export default function App() {
         <div className="flex items-center gap-1.5 sm:gap-3 w-full sm:w-auto justify-center">
           <button
             onClick={() => setViewStyle('phone')}
-            className={`px-2.5 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-sm neo-btn transition-all ${
+            className={`px-2.5 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-sm neo-btn transition-all flex items-center gap-1.5 ${
               viewStyle === 'phone'
                 ? 'bg-[#00f0ff] text-black shadow-[3px_3px_0px_#000] sm:shadow-[4px_4px_0px_#000]'
                 : 'bg-white text-slate-800 shadow-[2px_2px_0px_#000] opacity-80 hover:opacity-100'
             }`}
           >
-            📱 Phone Casing
+            <Smartphone className="w-4 h-4" />
+            <span>Phone Casing</span>
           </button>
           <button
             onClick={() => setViewStyle('screen')}
-            className={`px-2.5 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-sm neo-btn transition-all ${
+            className={`px-2.5 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-sm neo-btn transition-all flex items-center gap-1.5 ${
               viewStyle === 'screen'
                 ? 'bg-[#ff4794] text-white shadow-[3px_3px_0px_#000] sm:shadow-[4px_4px_0px_#000]'
                 : 'bg-white text-slate-800 shadow-[2px_2px_0px_#000] opacity-80 hover:opacity-100'
             }`}
           >
-            🖥️ Full Screen
+            <Monitor className="w-4 h-4" />
+            <span>Full Screen</span>
           </button>
 
           {/* Sound Toggle */}
@@ -183,10 +210,20 @@ export default function App() {
                 soundEnabled: !prev.soundEnabled,
               }))
             }
-            className="px-2.5 py-1 sm:px-3 sm:py-1.5 neo-btn bg-[#ffe600] text-xs sm:text-sm text-black shadow-[3px_3px_0px_#000]"
+            className="px-2.5 py-1 sm:px-3 sm:py-1.5 neo-btn bg-[#ffe600] text-xs sm:text-sm text-black shadow-[3px_3px_0px_#000] flex items-center gap-1.5"
             title={settings.soundEnabled ? 'Mute Sound' : 'Enable Sound'}
           >
-            {settings.soundEnabled ? '🔊 Sound' : '🔇 Muted'}
+            {settings.soundEnabled ? (
+              <>
+                <Volume2 className="w-4 h-4" />
+                <span>Sound</span>
+              </>
+            ) : (
+              <>
+                <VolumeX className="w-4 h-4" />
+                <span>Muted</span>
+              </>
+            )}
           </button>
         </div>
       </header>
@@ -246,8 +283,9 @@ export default function App() {
 
       {/* Neobrutalist Mobile-Responsive Keymap Controls Footer */}
       <footer className="w-full max-w-5xl neo-card p-2.5 sm:p-3 flex flex-wrap items-center justify-center gap-2 sm:gap-4 z-20 text-[10px] sm:text-xs font-extrabold">
-        <span className="neo-pill bg-[#ffe600] text-black px-2.5 py-1">
-          ▲▼◄► D-Pad / 2,4,6,8
+        <span className="neo-pill bg-[#ffe600] text-black px-2.5 py-1 flex items-center gap-1">
+          <Move className="w-3.5 h-3.5" />
+          <span>D-Pad / 2,4,6,8</span>
         </span>
         <span className="neo-pill bg-[#00f0ff] text-black px-2.5 py-1">
           Center / OK / 5
@@ -255,8 +293,9 @@ export default function App() {
         <span className="neo-pill bg-[#ff4794] text-white px-2.5 py-1">
           F1 / F2 Softkeys
         </span>
-        <span className="neo-pill bg-[#22c55e] text-black px-2.5 py-1">
-          End Key 📵 / Esc
+        <span className="neo-pill bg-[#22c55e] text-black px-2.5 py-1 flex items-center gap-1">
+          <PhoneOff className="w-3.5 h-3.5" />
+          <span>End Key / Esc</span>
         </span>
       </footer>
     </div>

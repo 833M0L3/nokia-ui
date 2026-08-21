@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Play, Pause, Volume2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface GalleryAppProps {
   onBack: () => void;
@@ -297,60 +298,10 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
 
   // Keyboard navigation & D-Pad event handling
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement).tagName)) return;
-
-      if (previewImageIndex !== null) {
-        // Image Viewer D-Pad Navigation
-        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-          e.preventDefault();
-          navigateImage('NEXT');
-        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-          e.preventDefault();
-          navigateImage('PREV');
-        } else if (e.key === 'Backspace' || e.key === 'Escape') {
-          e.preventDefault();
-          setPreviewImageIndex(null);
-        }
-        return;
-      }
-
-      if (previewVideoUrl) {
-        if (e.key === 'ArrowLeft') {
-          e.preventDefault();
-          handleDpadSeek(-5);
-        } else if (e.key === 'ArrowRight') {
-          e.preventDefault();
-          handleDpadSeek(5);
-        } else if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggleVideoPlay();
-        } else if (e.key === 'Backspace' || e.key === 'Escape') {
-          e.preventDefault();
-          setPreviewVideoUrl(null);
-        }
-        return;
-      }
-
-      if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        setSelectedIndex((prev) => (prev > 0 ? prev - 1 : items.length - 1));
-      } else if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        setSelectedIndex((prev) => (prev < items.length - 1 ? prev + 1 : 0));
-      } else if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        if (items[selectedIndex]) {
-          handleOpenItem(items[selectedIndex], selectedIndex);
-        }
-      } else if (e.key === 'Backspace' || e.key === 'Escape') {
-        e.preventDefault();
-        handleGoBack();
-      }
-    };
-
     const handleUINavigate = (e: CustomEvent) => {
-      const { dir } = e.detail || {};
+      const { dir, isDown = true } = e.detail || {};
+      if (!isDown) return;
+
       if (previewImageIndex !== null) {
         if (dir === 'RIGHT' || dir === 'DOWN') navigateImage('NEXT');
         else if (dir === 'LEFT' || dir === 'UP') navigateImage('PREV');
@@ -372,7 +323,10 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
       }
     };
 
-    const handleUICenterSelect = () => {
+    const handleUICenterSelect = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
+      if (!isDown) return;
+
       if (previewImageIndex !== null) return;
       if (previewVideoUrl) {
         toggleVideoPlay();
@@ -383,20 +337,20 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
       }
     };
 
-    const handleUIRightSoftkey = () => {
+    const handleUIRightSoftkey = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
+      if (!isDown) return;
       handleGoBack();
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('nokia-ui-navigate', handleUINavigate as any);
-    window.addEventListener('nokia-ui-center-select', handleUICenterSelect);
-    window.addEventListener('nokia-ui-right-softkey', handleUIRightSoftkey);
+    window.addEventListener('nokia-ui-navigate' as any, handleUINavigate as any);
+    window.addEventListener('nokia-ui-center-select' as any, handleUICenterSelect as any);
+    window.addEventListener('nokia-ui-right-softkey' as any, handleUIRightSoftkey as any);
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('nokia-ui-navigate', handleUINavigate as any);
-      window.removeEventListener('nokia-ui-center-select', handleUICenterSelect);
-      window.removeEventListener('nokia-ui-right-softkey', handleUIRightSoftkey);
+      window.removeEventListener('nokia-ui-navigate' as any, handleUINavigate as any);
+      window.removeEventListener('nokia-ui-center-select' as any, handleUICenterSelect as any);
+      window.removeEventListener('nokia-ui-right-softkey' as any, handleUIRightSoftkey as any);
     };
   }, [items, selectedIndex, pathHistory, currentPath, previewImageIndex, previewVideoUrl, isVideoPlaying, videoDuration]);
 
@@ -473,13 +427,11 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
               alt={currentPreviewItem.name}
               className="max-h-full max-w-full object-contain rounded shadow-2xl transition-all duration-200"
             />
-          </div>
-
-          {/* Navigation Hint Bar */}
+          </div>          {/* Navigation Hint Bar */}
           <div className="absolute bottom-2 inset-x-2 flex justify-between items-center text-[10px] font-bold text-white/90 bg-black/40 backdrop-blur-xs px-2 py-0.5 rounded border border-white/10 z-20">
-            <span>◄ Prev</span>
+            <span className="flex items-center gap-0.5"><ChevronLeft className="w-3 h-3" /> Prev</span>
             <span className="text-cyan-300">D-Pad Nav</span>
-            <span>Next ►</span>
+            <span className="flex items-center gap-0.5">Next <ChevronRight className="w-3 h-3" /></span>
           </div>
         </div>
       ) : previewVideoUrl ? (
@@ -489,22 +441,21 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
           <div className="flex-1 flex items-center justify-center relative overflow-hidden rounded bg-slate-950 border border-slate-800">
             <video
               ref={videoRef}
-              src={encodeURI(previewVideoUrl)}
+              src={previewVideoUrl}
               autoPlay
-              controls={false}
+              playsInline
+              loop
               onTimeUpdate={handleVideoTimeUpdate}
-              onEnded={() => setIsVideoPlaying(false)}
-              className="w-full h-full object-contain bg-black"
+              className="max-w-full max-h-full object-contain"
             />
           </div>
 
-          {/* Custom Nokia Video Control Bar with Interactive Seeking */}
-          <div className="mt-1.5 bg-slate-900/95 border border-slate-700/80 p-2 rounded-lg flex flex-col gap-1.5 shadow-xl">
-            {/* Interactive Progress Seek Bar (Click or Drag to Seek) */}
+          {/* S40 Custom Video Player Control Bar */}
+          <div className="bg-slate-900 border border-slate-700 rounded p-1.5 mt-1 flex flex-col gap-1 shadow-inner">
+            {/* Custom S40 Blue Seek Track */}
             <div
               onClick={handleSeek}
-              className="w-full h-3 bg-slate-800 rounded-full p-0.5 relative overflow-hidden border border-slate-700 cursor-pointer group"
-              title="Click or use D-Pad Left/Right to Seek"
+              className="w-full h-2 bg-slate-800 rounded-full overflow-hidden cursor-pointer relative border border-slate-700 shadow-inner"
             >
               <div
                 className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full transition-all duration-75 shadow-[0_0_8px_#06b6d4]"
@@ -516,12 +467,12 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
             <div className="flex items-center justify-between text-[11px] font-mono font-bold text-white px-1">
               <button
                 onClick={toggleVideoPlay}
-                className="text-xs font-bold text-cyan-300 hover:text-white cursor-pointer"
+                className="text-xs font-bold text-cyan-300 hover:text-white cursor-pointer flex items-center gap-1"
               >
-                {isVideoPlaying ? '⏸️ Pause' : '▶️ Play'}
+                {isVideoPlaying ? <><Pause className="w-3.5 h-3.5 fill-current" /> Pause</> : <><Play className="w-3.5 h-3.5 fill-current" /> Play</>}
               </button>
               <div className="flex items-center gap-2 text-[10px] text-slate-300">
-                <span className="text-slate-400">◄ -5s / +5s ►</span>
+                <span className="text-slate-400">+/- 5s</span>
                 <span className="font-bold text-white">
                   {formatVideoTime(videoCurrentTime)} / {formatVideoTime(videoDuration)}
                 </span>
@@ -565,13 +516,14 @@ export const GalleryApp: React.FC<GalleryAppProps> = ({ onBack, onSetWallpaper }
                     {/* File / Folder Metadata Details */}
                     <div className="flex-1 min-w-0">
                       <h4
-                        className={`text-xs truncate font-nokia ${
+                        className={`text-xs truncate font-nokia flex items-center gap-1.5 ${
                           isSelected
                             ? 'font-bold text-white symbian-text-shadow'
                             : 'font-semibold text-white/95 symbian-text-shadow'
                         }`}
                       >
-                        {item.name} {isPlayingThis ? '▶️ (Playing)' : ''}
+                        <span className="truncate">{item.name}</span>
+                        {isPlayingThis && <Volume2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 animate-pulse" />}
                       </h4>
 
                       {/* Date & Size Info Line */}

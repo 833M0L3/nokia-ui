@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Globe, Loader2 } from 'lucide-react';
 
 interface MobileWebAppProps {
   onBack: () => void;
@@ -36,39 +37,32 @@ export const MobileWebApp: React.FC<MobileWebAppProps> = ({ onBack }) => {
 
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Keyboard navigation for WAP links & step-by-step Back key
+  // Navigation for WAP links & step-by-step Back key
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement).tagName)) return;
+    const handleUINavigate = (e: CustomEvent) => {
+      const { dir, isDown = true } = e.detail || {};
+      if (!isDown) return;
 
-      if (e.key === 'ArrowUp') {
-        e.preventDefault();
+      if (dir === 'UP') {
         setSelectedIndex((prev) => (prev > 0 ? prev - 1 : WAP_LINKS.length - 1));
-      } else if (e.key === 'ArrowDown') {
-        e.preventDefault();
+      } else if (dir === 'DOWN') {
         setSelectedIndex((prev) => (prev < WAP_LINKS.length - 1 ? prev + 1 : 0));
-      } else if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        if (WAP_LINKS[selectedIndex]) {
-          openLink(WAP_LINKS[selectedIndex]);
-        }
-      } else if (e.key === 'Backspace' || e.key === 'Escape' || e.key === 'F2') {
-        e.preventDefault();
-        if (pageView === 'detail') {
-          setPageView('home');
-        } else {
-          onBack();
-        }
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedIndex, pageView, onBack]);
+    const handleUICenterSelect = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
+      if (!isDown) return;
 
-  // Listen to Right Softkey and Hardware casing Back keys for step-by-step navigation
-  useEffect(() => {
-    const handleRightSoftkey = () => {
+      if (WAP_LINKS[selectedIndex]) {
+        openLink(WAP_LINKS[selectedIndex]);
+      }
+    };
+
+    const handleRightSoftkey = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
+      if (!isDown) return;
+
       if (pageView === 'detail') {
         setPageView('home');
       } else {
@@ -76,25 +70,16 @@ export const MobileWebApp: React.FC<MobileWebAppProps> = ({ onBack }) => {
       }
     };
 
-    const handleHardwareKey = (e: CustomEvent) => {
-      const { code } = e.detail || {};
-      if (code === 'F2' || code === 'RightSoftkey' || code === 'Backspace' || code === 'Escape') {
-        if (pageView === 'detail') {
-          setPageView('home');
-        } else {
-          onBack();
-        }
-      }
-    };
-
-    window.addEventListener('nokia-ui-right-softkey', handleRightSoftkey);
-    window.addEventListener('nokia-hw-key' as any, handleHardwareKey);
+    window.addEventListener('nokia-ui-navigate' as any, handleUINavigate as any);
+    window.addEventListener('nokia-ui-center-select' as any, handleUICenterSelect as any);
+    window.addEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey as any);
 
     return () => {
-      window.removeEventListener('nokia-ui-right-softkey', handleRightSoftkey);
-      window.removeEventListener('nokia-hw-key' as any, handleHardwareKey);
+      window.removeEventListener('nokia-ui-navigate' as any, handleUINavigate as any);
+      window.removeEventListener('nokia-ui-center-select' as any, handleUICenterSelect as any);
+      window.removeEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey as any);
     };
-  }, [pageView, onBack]);
+  }, [selectedIndex, pageView, onBack]);
 
   // Scroll active item into view
   useEffect(() => {
@@ -131,9 +116,9 @@ export const MobileWebApp: React.FC<MobileWebAppProps> = ({ onBack }) => {
       {/* Top Address & URL Bar */}
       <form
         onSubmit={handleSearchSubmit}
-        className="bg-slate-900 text-white px-2 py-1 flex items-center gap-1 border-b border-slate-700 shadow-xs z-20 shrink-0"
+        className="bg-slate-900 text-white px-2 py-1 flex items-center gap-1.5 border-b border-slate-700 shadow-xs z-20 shrink-0"
       >
-        <span className="text-[10px] text-cyan-300 font-mono">🌐</span>
+        <Globe className="w-3.5 h-3.5 text-cyan-300 shrink-0" />
         <input
           type="text"
           value={inputUrl}
@@ -153,8 +138,8 @@ export const MobileWebApp: React.FC<MobileWebAppProps> = ({ onBack }) => {
       <div className="flex-1 relative flex overflow-hidden p-2">
         <div className="flex-1 overflow-y-auto symbian-scrollbar pr-1">
           {isLoading ? (
-            <div className="h-full flex flex-col items-center justify-center space-y-2 text-slate-700 animate-pulse text-xs font-semibold">
-              <span className="text-2xl">⏳</span>
+            <div className="h-full flex flex-col items-center justify-center space-y-2 text-slate-700 text-xs font-semibold">
+              <Loader2 className="w-6 h-6 text-cyan-600 animate-spin" />
               <span>Loading WAP Page...</span>
               <span className="text-[10px] font-mono text-slate-500">{currentUrl}</span>
             </div>

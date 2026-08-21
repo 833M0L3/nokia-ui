@@ -42,6 +42,7 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
         {
           type: 'j2me-key',
           eventType: isDown ? 'keydown' : 'keyup',
+          isDown,
           code,
           key: key || code,
         },
@@ -51,6 +52,7 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
         {
           type: 'CHEERP_KEY_EVENT',
           eventType: isDown ? 'keydown' : 'keyup',
+          isDown,
           code,
           key: key || code,
         },
@@ -59,11 +61,41 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
     }
   };
 
-  const triggerKeyPress = (code: string, key?: string) => {
-    sendKeyToIframe(code, true, key);
-    setTimeout(() => {
-      sendKeyToIframe(code, false, key);
-    }, 120);
+  const codeMap: Record<string, string> = {
+    ArrowUp: 'ArrowUp',
+    ArrowDown: 'ArrowDown',
+    ArrowLeft: 'ArrowLeft',
+    ArrowRight: 'ArrowRight',
+    Enter: 'Enter',
+    ' ': 'Enter',
+    F1: 'F1',
+    q: 'F1',
+    Q: 'F1',
+    F2: 'F2',
+    w: 'F2',
+    W: 'F2',
+    '0': 'Digit0',
+    '1': 'Digit1',
+    '2': 'Digit2',
+    '3': 'Digit3',
+    '4': 'Digit4',
+    '5': 'Digit5',
+    '6': 'Digit6',
+    '7': 'Digit7',
+    '8': 'Digit8',
+    '9': 'Digit9',
+    '*': 'NumpadAsterisk',
+    '#': 'NumpadDivide',
+    Numpad0: 'Digit0',
+    Numpad1: 'Digit1',
+    Numpad2: 'Digit2',
+    Numpad3: 'Digit3',
+    Numpad4: 'Digit4',
+    Numpad5: 'Digit5',
+    Numpad6: 'Digit6',
+    Numpad7: 'Digit7',
+    Numpad8: 'Digit8',
+    Numpad9: 'Digit9',
   };
 
   // Keyboard Navigation & Game Key Forwarding
@@ -81,39 +113,13 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
           return;
         }
 
-        const codeMap: Record<string, string> = {
-          ArrowUp: 'ArrowUp',
-          ArrowDown: 'ArrowDown',
-          ArrowLeft: 'ArrowLeft',
-          ArrowRight: 'ArrowRight',
-          Enter: 'Enter',
-          ' ': 'Enter',
-          F1: 'F1',
-          q: 'F1',
-          Q: 'F1',
-          F2: 'F2',
-          w: 'F2',
-          W: 'F2',
-          '0': 'Digit0',
-          '1': 'Digit1',
-          '2': 'Digit2',
-          '3': 'Digit3',
-          '4': 'Digit4',
-          '5': 'Digit5',
-          '6': 'Digit6',
-          '7': 'Digit7',
-          '8': 'Digit8',
-          '9': 'Digit9',
-          '*': 'NumpadAsterisk',
-          '#': 'NumpadDivide',
-        };
-
         const targetCode = codeMap[e.key];
         if (targetCode) {
           e.preventDefault();
           sendKeyToIframe(targetCode, true, e.key);
         }
       } else if (!selectedGame && !isLaunching) {
+        if (e.repeat) return;
         if (e.key === 'ArrowUp') {
           e.preventDefault();
           playKeyClick(soundEnabled);
@@ -137,34 +143,9 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
 
     const handleKeyUp = (e: KeyboardEvent) => {
       if (selectedGame && !isLaunching) {
-        const codeMap: Record<string, string> = {
-          ArrowUp: 'ArrowUp',
-          ArrowDown: 'ArrowDown',
-          ArrowLeft: 'ArrowLeft',
-          ArrowRight: 'ArrowRight',
-          Enter: 'Enter',
-          ' ': 'Enter',
-          F1: 'F1',
-          q: 'F1',
-          Q: 'F1',
-          F2: 'F2',
-          w: 'F2',
-          W: 'F2',
-          '0': 'Digit0',
-          '1': 'Digit1',
-          '2': 'Digit2',
-          '3': 'Digit3',
-          '4': 'Digit4',
-          '5': 'Digit5',
-          '6': 'Digit6',
-          '7': 'Digit7',
-          '8': 'Digit8',
-          '9': 'Digit9',
-          '*': 'NumpadAsterisk',
-          '#': 'NumpadDivide',
-        };
         const targetCode = codeMap[e.key];
         if (targetCode) {
+          e.preventDefault();
           sendKeyToIframe(targetCode, false, e.key);
         }
       }
@@ -182,18 +163,18 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
   // Listen to Nokia hardware frame events, softkeys, navigation & end key
   useEffect(() => {
     const handleHardwareKey = (e: CustomEvent) => {
-      const { code, key } = e.detail || {};
+      const { code, key, isDown = true } = e.detail || {};
 
       if (selectedGame && !isLaunching) {
-        if (code === 'EndCallKey' || code === 'EndKey' || code === 'Escape' || code === 'ExitGame') {
+        if (isDown && (code === 'EndCallKey' || code === 'EndKey' || code === 'Escape' || code === 'ExitGame')) {
           playKeyClick(soundEnabled);
           setSelectedGame(null);
           return;
         }
         if (code) {
-          triggerKeyPress(code, key);
+          sendKeyToIframe(code, isDown, key);
         }
-      } else if (!selectedGame && !isLaunching) {
+      } else if (!selectedGame && !isLaunching && isDown) {
         // Hardware D-Pad & Keypad navigation when browsing game list
         if (code === 'ArrowUp') {
           playKeyClick(soundEnabled);
@@ -213,8 +194,8 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
     };
 
     const handleNavigate = (e: CustomEvent) => {
+      const { dir, isDown = true } = e.detail || {};
       if (selectedGame && !isLaunching) {
-        const dir = e.detail?.dir;
         const dirMap: Record<string, string> = {
           UP: 'ArrowUp',
           DOWN: 'ArrowDown',
@@ -222,27 +203,30 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
           RIGHT: 'ArrowRight',
         };
         if (dir && dirMap[dir]) {
-          triggerKeyPress(dirMap[dir]);
+          sendKeyToIframe(dirMap[dir], isDown);
         }
       }
     };
 
-    const handleCenterSelect = () => {
+    const handleCenterSelect = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
       if (selectedGame && !isLaunching) {
-        triggerKeyPress('Enter');
+        sendKeyToIframe('Enter', isDown);
       }
     };
 
-    const handleLeftSoftkey = () => {
+    const handleLeftSoftkey = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
       if (selectedGame && !isLaunching) {
-        triggerKeyPress('F1');
+        sendKeyToIframe('F1', isDown);
       }
     };
 
-    const handleRightSoftkey = () => {
+    const handleRightSoftkey = (e: CustomEvent) => {
+      const isDown = e.detail?.isDown ?? true;
       if (selectedGame && !isLaunching) {
-        triggerKeyPress('F2');
-      } else if (!selectedGame) {
+        sendKeyToIframe('F2', isDown);
+      } else if (!selectedGame && isDown) {
         playKeyClick(soundEnabled);
         onBack();
       }
@@ -250,16 +234,16 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
 
     window.addEventListener('nokia-hw-key' as any, handleHardwareKey);
     window.addEventListener('nokia-ui-navigate' as any, handleNavigate);
-    window.addEventListener('nokia-ui-center-select', handleCenterSelect);
-    window.addEventListener('nokia-ui-left-softkey', handleLeftSoftkey);
-    window.addEventListener('nokia-ui-right-softkey', handleRightSoftkey);
+    window.addEventListener('nokia-ui-center-select' as any, handleCenterSelect);
+    window.addEventListener('nokia-ui-left-softkey' as any, handleLeftSoftkey);
+    window.addEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey);
 
     return () => {
       window.removeEventListener('nokia-hw-key' as any, handleHardwareKey);
       window.removeEventListener('nokia-ui-navigate' as any, handleNavigate);
-      window.removeEventListener('nokia-ui-center-select', handleCenterSelect);
-      window.removeEventListener('nokia-ui-left-softkey', handleLeftSoftkey);
-      window.removeEventListener('nokia-ui-right-softkey', handleRightSoftkey);
+      window.removeEventListener('nokia-ui-center-select' as any, handleCenterSelect);
+      window.removeEventListener('nokia-ui-left-softkey' as any, handleLeftSoftkey);
+      window.removeEventListener('nokia-ui-right-softkey' as any, handleRightSoftkey);
     };
   }, [selectedGame, isLaunching, games, selectedIndex, soundEnabled, onBack]);
 
