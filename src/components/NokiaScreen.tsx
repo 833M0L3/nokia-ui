@@ -41,8 +41,12 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
   useEffect(() => {
     if (activeApp) {
       setScreenView('app');
-    } else if (screenView === 'app') {
-      setScreenView('menu');
+    } else {
+      setIsGameRunning(false);
+      setIsOptionsOpen(false);
+      if (screenView === 'app') {
+        setScreenView('menu');
+      }
     }
   }, [activeApp]);
 
@@ -58,9 +62,10 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
   // Listen to Red End key, Center Select, Left Softkey, and Right Softkey UI events
   useEffect(() => {
     const handleGoHome = () => {
+      setIsGameRunning(false);
+      setIsOptionsOpen(false);
       onCloseApp();
       setScreenView('home');
-      setIsOptionsOpen(false);
     };
 
     const handleCenterSelect = (e: CustomEvent) => {

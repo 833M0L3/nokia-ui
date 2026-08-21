@@ -25,6 +25,9 @@ export const J2meRunnerApp: React.FC<J2meRunnerAppProps> = ({
   // Notify parent component whether a game is actively running
   useEffect(() => {
     onGameRunningChange?.(selectedGame !== null);
+    return () => {
+      onGameRunningChange?.(false);
+    };
   }, [selectedGame, onGameRunningChange]);
 
   const launchGame = (game: J2meGame) => {
