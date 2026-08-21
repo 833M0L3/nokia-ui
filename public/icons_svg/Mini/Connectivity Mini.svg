@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <polygon fill="#FFFFFF" points="2 8 17 8 17 0 30 13 30 23.967 13 23.967 13 32 2 19"/>
+  <polygon fill="#1E285A" points="28 15 4 15 4 10 19 10 19 5"/>
+  <polygon fill="#1E285A" points="28 21.857 11 21.857 11 26.857 4 17 28 17"/>
+</svg>

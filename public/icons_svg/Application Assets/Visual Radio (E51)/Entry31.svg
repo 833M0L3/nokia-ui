@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.1" width="100%" height="100%" viewBox="0 0 16 16">
+  <switch>
+    <g>
+      <circle fill="#FF0000" stroke="#8F0000" cx="8" cy="8" r="7.5"/>
+      <circle fill="#FFFFFF" stroke="#FFFFFF" cx="5.709" cy="5.083" r="1.625"/>
+    </g>
+  </switch>
+</svg>

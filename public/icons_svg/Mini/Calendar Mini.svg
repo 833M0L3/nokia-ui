@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" version="1.1" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M29.122,6.879C28.555,6.313,27.802,6,27,6L27,3L5,3L5,6C3.346,6,2,7.346,2,9L2,26C2,27.654,3.346,29,5,29L27,29C27.802,29,28.555,28.687,29.121,28.121C29.687,27.555,30,26.803,30,26L30,9C30,8.199,29.688,7.445,29.122,6.879z" fill="#FFFFFF"/>
+  <path d="M28,26C28,26.553,27.553,27,27,27L5,27C4.448,27,4,26.553,4,26L4,9C4,8.448,4.448,8,5,8L27,8C27.553,8,28,8.448,28,9L28,26z"/>
+  <polygon fill="#F2F2F2" points="5 9 6 9 6 8 26 8 26 9 27 9 27 26 5 26"/>
+  <polygon fill="#CA3000" points="13 14 13 16 15 16 15 24 18 24 18 14"/>
+  <rect fill="#333333" height="6" width="2" x="7" y="5"/>
+  <rect fill="#333333" height="6" width="2" x="11" y="5"/>
+  <rect fill="#333333" height="6" width="2" x="15" y="5"/>
+  <rect fill="#333333" height="6" width="2" x="19" y="5"/>
+  <rect fill="#333333" height="6" width="2" x="23" y="5"/>
+</svg>

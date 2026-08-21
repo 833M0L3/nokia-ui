@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="13" version="1.1" viewBox="0 0 13 13" width="13">
+  <rect fill="none" height="13" width="13"/>
+  <rect fill="none" height="13" width="13"/>
+  <polygon fill="#FFFFFF" points="0.98 0.07 0.48 0.57 0.48 12.298 0.98 12.798 12.042 12.798 12.542 12.298 12.542 2.512 12.401 2.164 10.52 0.223 10.16 0.07"/>
+  <polygon fill="#B65B00" points="0.98 0.57 0.98 12.298 12.042 12.298 12.042 2.512 10.16 0.57"/>
+  <polygon fill="#F1CB16" points="1.48 1.07 1.48 11.798 11.542 11.798 11.542 2.715 9.948 1.07"/>
+  <polygon fill="#B65B00" points="9.519 1.061 9.924 0.996 9.936 2.705 11.658 2.705 11.632 3.123 9.506 3.123"/>
+  <rect fill="#7C3C03" height="0.484" width="7.438" x="2.812" y="9.208"/>
+  <rect fill="#EFDE7B" height="0.484" width="7.438" x="2.813" y="9.624"/>
+  <circle cx="4.442" cy="4.643" fill="#FFFFFF" r="2.292"/>
+  <circle cx="4.441" cy="4.643" fill="#BF001B" r="1.293"/>
+</svg>

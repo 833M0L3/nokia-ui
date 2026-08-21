@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+  <g>
+    <rect fill="#C23D0D" width="16" height="16"/>
+    <rect x="1" y="1" fill="url(#XMLID_3_)" width="14" height="14"/>
+    <defs>
+      <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="8" y1="15" x2="8" y2="1">
+        <stop offset="0" stop-color="#F4D3BD"/>
+        <stop offset="0.0056" stop-color="#F4D3BD"/>
+        <stop offset="1" stop-color="#F3F3F3"/>
+      </linearGradient>
+    </defs>
+    <rect x="2" y="3" fill="#C23D0D" width="12" height="1"/>
+    <rect x="10" y="11" fill="#C23D0D" width="1" height="1"/>
+    <rect x="12" y="11" fill="#91352F" width="2" height="1"/>
+    <rect x="10" y="9" fill="#C23D0D" width="1" height="1"/>
+    <rect x="12" y="7" fill="#91352F" width="2" height="1"/>
+    <rect x="10" y="7" fill="#C23D0D" width="1" height="1"/>
+    <rect x="12" y="9" fill="#91352F" width="2" height="1"/>
+    <rect x="2" y="4" fill="#91352F" width="12" height="1"/>
+    <circle fill="#91352F" cx="5.5" cy="10.5" r="3.5"/>
+    <circle fill="#C23D0D" cx="5.5" cy="10.5" r="3"/>
+    <path fill="#91352F" d="M5.501,7L5.501,7C3.567,7,2,8.567,2,10.5L2,10.501L5.501,10.501L5.501,7z"/>
+    <radialGradient id="XMLID_4_" cx="3.749" cy="8.75" r="1.7517" fx="3.749" fy="8.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F3F3F3"/>
+      <stop offset="0.0056" stop-color="#F3F3F3"/>
+      <stop offset="0.255" stop-color="#F3EFEC"/>
+      <stop offset="0.6163" stop-color="#F3E3D9"/>
+      <stop offset="1" stop-color="#F4D3BD"/>
+    </radialGradient>
+    <path fill="url(#XMLID_4_)" d="M2.602,10C3.279,10,4.413,10.001,5.001,10.001C5.001,9.413,5.001,8.283,5.001,7.601C3.762,7.818,2.818,8.762,2.602,10z"/>
+  </g>
+</svg>

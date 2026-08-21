@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="13" viewBox="0 0 13 13" width="13">
+  <rect fill="none" height="13" width="13"/>
+  <path d="M1,5L1,8L12,8L12,5L1,5zM11,7L2,7L2,6L11,6L11,7z"/>
+  <line x1="2.535" x2="1.466" y1="4.309" y2="1.69"/>
+  <rect height="1" transform="matrix(-0.3778 -0.9259 0.9259 -0.3778 -0.0213 5.9852)" width="2.828" x="0.586" y="2.5"/>
+  <line x1="5.595" x2="4.405" y1="4.283" y2="1.717"/>
+  <rect height="1" transform="matrix(-0.4209 -0.9071 0.9071 -0.4209 4.3833 8.7982)" width="2.828" x="3.586" y="2.5"/>
+  <line x1="10.463" x2="11.532" y1="8.846" y2="11.464"/>
+  <rect height="1" transform="matrix(-0.3778 -0.9259 0.9259 -0.3778 5.7493 24.1738)" width="2.828" x="9.583" y="9.655"/>
+  <line x1="7.403" x2="8.593" y1="8.872" y2="11.438"/>
+  <rect height="1" transform="matrix(-0.4209 -0.9071 0.9071 -0.4209 2.1532 21.6841)" width="2.828" x="6.584" y="9.655"/>
+  <line x1="8.431" x2="7.362" y1="1.646" y2="4.264"/>
+  <rect height="1" transform="matrix(0.3778 -0.9259 0.9259 0.3778 2.1777 9.15)" width="2.828" x="6.482" y="2.455"/>
+  <line x1="11.491" x2="10.301" y1="1.672" y2="4.237"/>
+  <rect height="1" transform="matrix(0.4209 -0.9071 0.9071 0.4209 3.6296 11.5947)" width="2.828" x="9.482" y="2.455"/>
+  <line x1="4.466" x2="5.535" y1="11.45" y2="8.832"/>
+  <rect height="1" transform="matrix(-0.3778 0.9259 -0.9259 -0.3778 16.2789 9.3416)" width="2.828" x="3.586" y="9.641"/>
+  <line x1="1.406" x2="2.596" y1="11.424" y2="8.858"/>
+  <rect height="1" transform="matrix(-0.4209 0.9071 -0.9071 -0.4209 12.0422 12.5946)" width="2.828" x="0.587" y="9.641"/>
+</svg>

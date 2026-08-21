@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" version="1.1" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M2,16C2,23.72,8.28,30,16,30C23.72,30,30,23.72,30,16C30,8.28,23.72,2,16,2C8.28,2,2,8.28,2,16z" fill="#FFFFFF"/>
+  <circle cx="16" cy="16" fill="#4D4D4D" r="12"/>
+  <path d="M5,16C5,22.065,9.935,27,16,27C22.065,27,27,22.065,27,16C27,9.935,22.065,5,16,5C9.935,5,5,9.935,5,16z" fill="#F3DA17"/>
+  <ellipse cx="12.5" cy="13.5" fill="#1E285A" rx="1.5" ry="3.5"/>
+  <path d="M17.817,24.607C13.44,25.833,10.651,22.833,10.651,22.833C10.651,22.833,13.249,23.951,16.965,22.471C20.682,20.991,21.799,18.392,21.799,18.392C22.313,18.188,22.632,23.258,17.817,24.607z" fill="#1E285A"/>
+  <polygon fill="#1E285A" points="22.707 9.768 23.707 11.5 19.578 13.884 23.707 16.268 22.707 18 17 13.884"/>
+</svg>

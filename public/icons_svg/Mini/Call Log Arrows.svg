@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" xml:space="preserve">
+  <switch>
+    <g>
+      <g id="Layer_1">
+        <path fill="none" d="M0,0L23,0L23,23L0,23L0,0z"/>
+        <linearGradient id="XMLID_1_" gradientUnits="userSpaceOnUse" x1="11.9492" y1="7.6729" x2="20.0877" y2="12.3716" gradientTransform="matrix(-1 0 0 -1 23 23)">
+          <stop offset="0" stop-color="#51AE29"/>
+          <stop offset="1" stop-color="#C8E62D"/>
+        </linearGradient>
+        <path fill="url(#XMLID_1_)" stroke="#FFFFFF" d="M9.598,12.104L11.661,12.104C11.661,12.104,12.156,12.138,12.317,12.292C12.63,12.589,12.416,12.963,12.416,12.963L7.728,18.802C7.728,18.802,7.363,19.396,7.01,19.396C6.657,19.396,6.256,18.692,6.256,18.692L2.039,13.105C1.97,12.989,1.695,12.716,1.898,12.386C2.086,12.082,2.554,12.089,2.554,12.089L4.538,12.081L4.522,8.245C4.522,8.245,4.928,7.292,6.881,7.292C9.059,7.292,9.6,8.261,9.6,8.261L9.598,12.104z"/>
+        <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="2.9111" y1="10.6289" x2="11.0496" y2="15.3276" gradientTransform="matrix(-1 0 0 -1 23 23)">
+          <stop offset="0" stop-color="#183C7E"/>
+          <stop offset="1" stop-color="#1E8FBF"/>
+        </linearGradient>
+        <path fill="url(#XMLID_2_)" stroke="#FFFFFF" d="M13.402,10.896L11.34,10.896C11.34,10.896,10.845,10.862,10.684,10.708C10.371,10.411,10.585,10.037,10.585,10.037L15.273,4.198C15.273,4.198,15.638,3.604,15.991,3.604C16.344,3.604,16.745,4.308,16.745,4.308L20.962,9.895C21.031,10.011,21.306,10.284,21.103,10.614C20.915,10.918,20.447,10.911,20.447,10.911L18.463,10.919L18.479,14.755C18.479,14.755,18.073,15.708,16.12,15.708C13.942,15.708,13.401,14.739,13.401,14.739L13.402,10.896z"/>
+      </g>
+    </g>
+  </switch>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="80" viewBox="0 0 60 80" width="60">
+  <g>
+    <g opacity="0.9" stroke-opacity="0.9">
+      <path d="M30.251,13.144C18.672,13.144,10.688,18.646,10.688,39.663C10.688,60.68,18.672,66.18,30.251,66.18C41.831,66.18,49.812,60.68,49.812,39.663C49.812,18.646,41.831,13.144,30.251,13.144z" fill="url(#XMLID_2_)" fill-rule="evenodd" stroke="#0B3D91" stroke-width="0.5"/>
+      <path d="M42.266,30.593L28.533,16.859L28.533,34.963L20.98,27.41L18.232,30.156L27.712,39.662L18.232,49.166L20.98,51.914L28.533,44.36L28.533,62.464L42.265,48.731L33.197,39.662L42.266,30.593zM36.779,30.626L32.398,35.006L32.393,26.24L36.779,30.626zM36.779,48.699L32.393,53.083L32.398,44.317L36.779,48.699z" fill="#FFFFFF" fill-rule="evenodd"/>
+      <defs>
+        <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_2_" x1="12.5903" x2="47.9118" y1="22.0015" y2="57.323">
+          <stop offset="0" stop-color="#4D63D7"/>
+          <stop offset="1" stop-color="#0B3D91"/>
+        </linearGradient>
+      </defs>
+    </g>
+    <rect fill="none" fill-rule="evenodd" height="80" width="60"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="32" height="32" viewBox="0 0 32 32">
+  <g>
+    <rect fill="none" width="32" height="32"/>
+    <path d="M8,3C5.243,3,3,5.243,3,8L3,24C3,26.757,5.243,29,8,29L24,29C26.757,29,29,26.757,29,24L29,8C29,5.243,26.757,3,24,3L8,3z"/>
+    <path fill="#FFFFFF" d="M27,24C27,25.657,25.657,27,24,27L8,27C6.343,27,5,25.657,5,24L5,8C5,6.343,6.343,5,8,5L24,5C25.657,5,27,6.343,27,8L27,24z"/>
+    <path fill="#999999" d="M7,7L26.816,7C26.403,5.837,25.305,5,24,5L8,5C6.343,5,5,6.343,5,8L5,24C5,25.305,5.837,26.403,7,26.816L7,7z"/>
+  </g>
+</svg>

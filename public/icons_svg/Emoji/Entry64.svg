@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M2,16C2,23.72,8.28,30,16,30C23.72,30,30,23.72,30,16C30,8.28,23.72,2,16,2C8.28,2,2,8.28,2,16z" fill="#FFFFFF"/>
+  <circle cx="16" cy="16" fill="#4D4D4D" r="12"/>
+  <path d="M5,16C5,22.065,9.935,27,16,27C22.065,27,27,22.065,27,16C27,9.935,22.065,5,16,5C9.935,5,5,9.935,5,16z" fill="#F3DA17"/>
+  <path d="M25,14C25,15.104,24.104,16,23,16L9,16C7.896,16,7,15.104,7,14L7,12C7,10.896,7.896,10,9,10L23,10C24.104,10,25,10.896,25,12L25,14z" fill="#1E285A"/>
+  <polygon fill="#1E285A" points="11 20 21 20 21 18 23 18 23 23 9 23 9 18 11 18"/>
+  <rect fill="#5FC53D" height="2" width="7" x="16" y="12"/>
+  <rect fill="#CF4400" height="2" width="7" x="9" y="12"/>
+</svg>

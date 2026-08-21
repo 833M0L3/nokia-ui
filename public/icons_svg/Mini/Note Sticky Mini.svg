@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M8,4C7.199,4,6.445,4.312,5.879,4.878C5.312,5.445,5,6.198,5,7L5,25C5,26.654,6.346,28,8,28L24,28C25.654,28,27,26.654,27,25L27,7C27,5.346,25.654,4,24,4L8,4z" fill="#FFFFFF"/>
+  <path d="M25,25C25,25.553,24.553,26,24,26L8,26C7.448,26,7,25.553,7,25L7,7C7,6.447,7.448,6,8,6L24,6C24.553,6,25,6.447,25,7L25,25z"/>
+  <rect fill="#FFF016" height="18" width="16" x="8" y="7"/>
+  <rect fill="#FFF016" height="6" width="6" x="7" y="6"/>
+  <rect height="1" width="12" x="10" y="18"/>
+  <rect height="1" width="12" x="10" y="21"/>
+  <circle cx="17.594" cy="12.094" r="1.656"/>
+  <path d="M18.115,11.118C18.574,11.319,18.258,13.58,17.304,12.939L8.064,8.561C7.91,8.504,7.958,7.843,8.165,7.105L8.165,7.105C8.37,6.377,8.66,5.835,8.811,5.904L18.115,11.118z" fill="url(#XMLID_3_)"/>
+  <radialGradient cx="5.9467" cy="5.8891" fx="5.9467" fy="5.8891" gradientUnits="userSpaceOnUse" id="XMLID_4_" r="4.363">
+    <stop offset="0" stop-color="#FF0000"/>
+    <stop offset="0.2321" stop-color="#FC0000"/>
+    <stop offset="0.3712" stop-color="#F40000"/>
+    <stop offset="0.4867" stop-color="#E60000"/>
+    <stop offset="0.5887" stop-color="#D10000"/>
+    <stop offset="0.8483" stop-color="#9F0000"/>
+    <stop offset="0.9944" stop-color="#530000"/>
+  </radialGradient>
+  <circle cx="7" cy="6" fill="url(#XMLID_4_)" r="4"/>
+  <circle cx="6.024" cy="5" fill="#FFFFFF" r="1"/>
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_3_" x1="12.5849" x2="13.8138" y1="10.8643" y2="8.4522">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="0.1676" stop-color="#1F1F1F"/>
+      <stop offset="0.324" stop-color="#FFFFFF"/>
+      <stop offset="0.6872" stop-color="#FFFFFF"/>
+      <stop offset="0.8492" stop-color="#242424"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+</svg>

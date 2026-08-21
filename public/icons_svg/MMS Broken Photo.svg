@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="60" version="1.1" viewBox="0 0 72 60" width="72">
+  <rect fill="none" height="60" width="72"/>
+  <path d="M1,1C1,2.901,1,57.1,1,59C2.918,59,69.083,59,71,59C71,57.1,71,2.901,71,1C69.083,1,2.918,1,1,1z" fill="#00467C"/>
+  <path d="M3,3C3,4.894,3,55.105,3,57C4.912,57,67.087,57,69,57C69,55.105,69,4.894,69,3C67.087,3,4.912,3,3,3z" fill="#FFFFFF"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_517_" x1="16.2618" x2="46.4981" y1="17.3662" y2="52.658">
+    <stop offset="0" stop-color="#CFCFCE"/>
+    <stop offset="1" stop-color="#2E2D2E"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_517_)" points="14.003 16.605 46 53.902 48.246 52.822 16.143 16.001"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_518_" x1="37.1191" x2="64.9002" y1="4.8819" y2="42.2795">
+    <stop offset="0.0515" stop-color="#626262"/>
+    <stop offset="0.3497" stop-color="#FFFFFF"/>
+    <stop offset="0.809" stop-color="#6C6C6C"/>
+  </linearGradient>
+  <path d="M58.729,14.204C58.774,12.065,58.303,10.364,55.954,10.222C55.028,10.166,27.186,7.179,27.186,7.179C25.462,7.262,23.78,7.718,23.19,8.009C23.354,7.976,23.566,7.979,23.854,8.008L54.133,12.075C55.509,12.154,56.023,12.979,55.982,14L55.941,46.23C55.941,46.648,55.607,47.043,55.135,47.295C56.023,47.058,58.505,46.189,58.687,44.196C58.857,42.346,58.688,15.389,58.729,14.204z" fill="url(#XMLID_518_)"/>
+  <path d="M53.8,15.44L25.514,11.21C27.776,13.997,31.332,18.379,35.196,23.146L39.112,19.327L39.233,28.119C39.471,28.416,39.714,28.712,39.955,29.007L39.918,19.982L46.683,32.565L43.17,32.971C43.247,33.067,43.325,33.165,43.399,33.258C46.438,32.858,48.46,32.255,48.46,32.255L45.983,36.442C48.641,39.721,50.968,42.591,52.569,44.569L53.889,44.87L53.8,15.44z" fill="#FFFFFF"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_519_" x1="29.504" x2="60.9661" y1="6.3226" y2="37.7848">
+    <stop offset="0" stop-color="#C3E1E2"/>
+    <stop offset="0.2697" stop-color="#7AC1D7"/>
+    <stop offset="0.4785" stop-color="#559CC2"/>
+    <stop offset="0.6914" stop-color="#367EB1"/>
+    <stop offset="0.8728" stop-color="#246CA7"/>
+    <stop offset="1" stop-color="#1D65A3"/>
+  </linearGradient>
+  <path d="M53.8,15.44L25.514,11.21C27.776,13.997,31.332,18.379,35.196,23.146L39.112,19.327L39.233,28.119C39.471,28.416,39.714,28.712,39.955,29.007L39.918,19.982L46.683,32.565L43.17,32.971C43.247,33.067,50.969,42.591,52.569,44.569L53.889,44.87L53.8,15.44z" fill="url(#XMLID_519_)"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_520_" x1="37.9391" x2="47.7088" y1="25.2355" y2="34.831">
+    <stop offset="0" stop-color="#F5F021"/>
+    <stop offset="0.6592" stop-color="#EAB118"/>
+    <stop offset="1" stop-color="#E68E1A"/>
+  </linearGradient>
+  <path d="M43.396,33.257C44.279,34.35,45.144,35.414,45.978,36.442L48.456,32.255C48.456,32.255,46.436,32.857,43.396,33.257z" fill="url(#XMLID_520_)"/>
+  <path d="M43.532,50.912L36.935,43.245L22.943,41.853L22.115,38.916C22.115,38.916,26.761,40.226,31.506,39.974C32.364,39.929,33.181,39.857,33.945,39.771L33.694,39.482L31.28,39.76L31.267,36.66L30.56,35.838L30.604,38.971L20.688,35.251L25.778,30.282L16.052,18.9821L16.103,44.6631L43.532,50.912z" fill="#FFFFFF"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_521_" x1="8.9115" x2="40.3736" y1="24.6559" y2="56.118">
+    <stop offset="0" stop-color="#C3E1E2"/>
+    <stop offset="0.2697" stop-color="#7AC1D7"/>
+    <stop offset="0.4785" stop-color="#559CC2"/>
+    <stop offset="0.6914" stop-color="#367EB1"/>
+    <stop offset="0.8728" stop-color="#246CA7"/>
+    <stop offset="1" stop-color="#1D65A3"/>
+  </linearGradient>
+  <path d="M43.532,50.912L33.695,39.482L31.28,39.76L31.267,36.66L30.56,35.838L30.604,38.971L20.688,35.251L25.778,30.282L16.052,18.9821L16.103,44.6631L43.532,50.912z" fill="url(#XMLID_521_)"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_522_" x1="24.2762" x2="34.0498" y1="36.7222" y2="46.3216">
+    <stop offset="0" stop-color="#F5F021"/>
+    <stop offset="0.6592" stop-color="#EAB118"/>
+    <stop offset="1" stop-color="#E68E1A"/>
+  </linearGradient>
+  <path d="M22.116,38.921L22.944,41.856L36.936,43.249L33.947,39.776C33.183,39.862,32.366,39.934,31.508,39.979C26.762,40.23,22.116,38.921,22.116,38.921z" fill="url(#XMLID_522_)"/>
+</svg>

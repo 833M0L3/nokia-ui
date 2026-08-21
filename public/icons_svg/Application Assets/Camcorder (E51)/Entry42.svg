@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="44" version="1.1" viewBox="0 0 36 44" width="36">
+  <g>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_3_" x1="8.4824" x2="22.5638" y1="15.644" y2="30.0416">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.1142" stop-color="#E0EAF3"/>
+      <stop offset="0.35" stop-color="#A2C2DD"/>
+      <stop offset="0.4825" stop-color="#8CA9CF"/>
+      <stop offset="0.7" stop-color="#6C83BB"/>
+      <stop offset="0.7458" stop-color="#637DB5"/>
+      <stop offset="0.8189" stop-color="#4C6EA4"/>
+      <stop offset="0.9097" stop-color="#265689"/>
+      <stop offset="0.9888" stop-color="#003D6D"/>
+      <stop offset="1" stop-color="#003D6D"/>
+    </linearGradient>
+    <path d="M18.004,19.049C14.504,19.049,11.674,21.881,11.674,25.377C11.674,28.873,14.504,31.703,18.004,31.703C21.496,31.703,24.33,28.873,24.33,25.377C24.33,21.881,21.496,19.049,18.004,19.049zM18.004,29.598C15.668,29.598,13.785,27.709,13.785,25.377C13.785,23.045,15.668,21.158,18.004,21.158C20.332,21.158,22.223,23.045,22.223,25.377C22.223,27.709,20.336,29.598,18.004,29.598z" fill="url(#XMLID_3_)"/>
+    <rect fill="#496DA2" height="2.109" width="2.111" x="7.457" y="19.049"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_4_" x1="-8.3369" x2="31.4117" y1="-2.6172" y2="38.0239">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.1142" stop-color="#E0EAF3"/>
+      <stop offset="0.35" stop-color="#A2C2DD"/>
+      <stop offset="0.4825" stop-color="#8CA9CF"/>
+      <stop offset="0.7" stop-color="#6C83BB"/>
+      <stop offset="0.7458" stop-color="#637DB5"/>
+      <stop offset="0.8189" stop-color="#4C6EA4"/>
+      <stop offset="0.9097" stop-color="#265689"/>
+      <stop offset="0.9888" stop-color="#003D6D"/>
+      <stop offset="1" stop-color="#003D6D"/>
+    </linearGradient>
+    <path d="M30.721,14.83L30.721,10.609L22.283,10.609L22.283,14.83L3.236,14.83L3.236,35.924L32.767,35.924L32.767,14.83L30.721,14.83zM24.395,12.723L28.614,12.723L28.614,14.83L24.395,14.83L24.395,12.723zM30.613,33.824L5.414,33.824L5.414,16.924L30.613,16.924L30.613,33.824z" fill="url(#XMLID_4_)"/>
+    <rect fill="none" height="44" width="36"/>
+  </g>
+</svg>

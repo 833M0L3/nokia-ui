@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="24" viewBox="0 0 39 24" width="39">
+  <switch>
+    <g>
+      <rect fill="none" height="24" width="39"/>
+      <polygon fill="#4FE019" points="12.607 10.08 14.202 8.958 16.27 8.958 15.135 10.08"/>
+      <path d="M31.104,2.188C31.104,2.188,27.655,6.43,24.414,11.456C21.787,15.538,19.339,20.253,18.586,23.001L20.373,22.199C24.824,10.803,32.98,2.196,32.98,2.196L32.96,2.188L31.114,2.188L31.104,2.188z" fill="#186818"/>
+      <polygon fill="#4FE019" points="31.946 0.993 30.241 1.004 31.104 2.188 33 2.188"/>
+      <path d="M19.188,15.447L16.269,8.977L15.134,10.089L18.344,16.739C18.625,16.299,18.905,15.867,19.176,15.446L19.188,15.446z" fill="#186818"/>
+      <radialGradient cx="-278.3496" cy="432.5479" fx="-278.3496" fy="432.5479" gradientTransform="matrix(18.43 0 0 -21.93 5151.8218 9497.7754)" gradientUnits="userSpaceOnUse" id="XMLID_50_" r="0.5015">
+        <stop offset="0" stop-color="#C9FE32"/>
+        <stop offset="0.15" stop-color="#BFFE32"/>
+        <stop offset="0.41" stop-color="#A4FE32"/>
+        <stop offset="0.74" stop-color="#79FE32"/>
+        <stop offset="1" stop-color="#53FE32"/>
+      </radialGradient>
+      <path d="M18.345,16.74L15.135,10.08L12.608,10.08L18.576,22.99C19.328,20.241,21.766,15.537,24.404,11.444C27.634,6.42,31.094,2.177,31.094,2.177L30.241,0.992C30.241,0.992,26.67,3.75,18.355,16.729L18.345,16.74z" fill="url(#XMLID_50_)"/>
+    </g>
+  </switch>
+</svg>

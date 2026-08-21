@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M28,20L27,20L27,5C27,3.896,26.104,3,25,3L7,3C5.896,3,5,3.896,5,5L5,20L4,20C2.896,20,2,20.896,2,22L2,28C2,29.104,2.896,30,4,30L28,30C29.104,30,30,29.104,30,28L30,22C30,20.896,29.104,20,28,20z" fill="#FFFFFF"/>
+  <path d="M25,18C25,19.104,24.104,20,23,20L9,20C7.896,20,7,19.104,7,18L7,7C7,5.896,7.896,5,9,5L23,5C24.104,5,25,5.896,25,7L25,18z" fill="#365780"/>
+  <path d="M28,26C28,27.104,27.104,28,26,28L6,28C4.896,28,4,27.104,4,26L4,24C4,22.896,4.896,22,6,22L26,22C27.104,22,28,22.896,28,24L28,26z" fill="#365780"/>
+  <path d="M23,16C23,17.104,22.104,18,21,18L11,18C9.896,18,9,17.104,9,16L9,9C9,7.896,9.896,7,11,7L21,7C22.104,7,23,7.896,23,9L23,16z" fill="#C7D4EB"/>
+  <rect fill="#FFFFFF" height="9" width="4" x="11" y="8"/>
+  <rect fill="#F3DA17" height="3" width="4" x="19" y="23"/>
+  <rect fill="#C7D4EB" height="3" width="2" x="24" y="23"/>
+</svg>

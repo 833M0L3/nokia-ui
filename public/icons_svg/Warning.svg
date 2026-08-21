@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="80" version="1.1" viewBox="0 0 60 80" width="60">
+  <path d="M19.355,15.153L25.214,52.067C25.214,52.067,25.849,53.288,30.243,53.19C34.637,53.091,34.784,52.067,34.784,52.067L40.642,15.153L19.355,15.153z" fill="url(#XMLID_959_)"/>
+  <path d="M40.645,15.153C40.645,16.852,35.878,18.229,30,18.229C24.121,18.229,19.355,16.852,19.355,15.153C19.355,13.454,24.121,12.077,30,12.077C35.878,12.077,40.645,13.454,40.645,15.153z" fill="#9F0039"/>
+  <radialGradient cx="30" cy="63.6387" gradientUnits="userSpaceOnUse" id="XMLID_960_" r="6.0059">
+    <stop offset="0" stop-color="#FF0000"/>
+    <stop offset="0.3016" stop-color="#FC0000"/>
+    <stop offset="0.4834" stop-color="#F40000"/>
+    <stop offset="0.6344" stop-color="#E60000"/>
+    <stop offset="0.7677" stop-color="#D10000"/>
+    <stop offset="0.8427" stop-color="#C20000"/>
+    <stop offset="1" stop-color="#9F0000"/>
+  </radialGradient>
+  <path d="M36.006,63.639C36.006,66.955,33.318,69.645,30,69.645C26.683,69.645,23.994,66.957,23.994,63.639C23.994,60.321,26.683,57.633,30,57.633C33.316,57.633,36.006,60.32,36.006,63.639z" fill="url(#XMLID_960_)"/>
+  <path d="M60,80L0,80L0,0L60,0L60,80z" fill="none"/>
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_959_" x1="21.3955" x2="42.4504" y1="34.5684" y2="32.3554">
+      <stop offset="0.0225" stop-color="#FF0000"/>
+      <stop offset="0.0502" stop-color="#FF0606"/>
+      <stop offset="0.0868" stop-color="#FF1717"/>
+      <stop offset="0.1284" stop-color="#FF3232"/>
+      <stop offset="0.1738" stop-color="#FF5858"/>
+      <stop offset="0.2216" stop-color="#FF8989"/>
+      <stop offset="0.236" stop-color="#FF9999"/>
+      <stop offset="1" stop-color="#A40000"/>
+    </linearGradient>
+  </defs>
+</svg>

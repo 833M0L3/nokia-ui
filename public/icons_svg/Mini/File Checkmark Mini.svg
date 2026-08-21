@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" version="1.1" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M23.104,3.648L6.296,3.648C6.02,3.648,5.796,3.872,5.796,4.148L5.796,28.377C5.796,28.652,6.02,28.877,6.296,28.877L26,28.877C26.275,28.877,26.5,28.652,26.5,28.377L26.5,7.336C26.5,7.211,23.243,3.648,23.104,3.648z" fill="#FFFFFF"/>
+  <polygon fill="#F2BD00" points="25.615 7.685 25.615 27.903 6.681 27.903 6.681 4.622 22.832 4.622"/>
+  <rect height="2.947" width="2.947" x="8.912" y="8.692"/>
+  <rect height="2.947" width="9.568" x="13.696" y="8.692"/>
+  <rect height="2.948" width="2.947" x="8.912" y="15.568"/>
+  <rect height="2.948" width="9.568" x="13.696" y="15.568"/>
+  <rect height="2.947" width="2.947" x="8.912" y="22.531"/>
+  <rect height="2.947" width="9.568" x="13.696" y="22.531"/>
+  <path d="M10.557,14.642L14.93,22.35L23.032,10.91C19.047,12.812,15.007,17.657,15.007,17.657C11.948,14.253,10.557,14.642,10.557,14.642z" fill="#F72D1E"/>
+</svg>

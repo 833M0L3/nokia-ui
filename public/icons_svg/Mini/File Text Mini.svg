@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+  <g>
+    <rect fill="none" width="16" height="16"/>
+    <polygon points="2 1 2 15 14 15 14 4 11 1"/>
+    <radialGradient id="XMLID_2_" cx="3.1025" cy="2.1377" r="14.9278" fx="3.1025" fy="2.1377" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEF700"/>
+      <stop offset="0.2022" stop-color="#FEF700"/>
+      <stop offset="0.334" stop-color="#FDF300"/>
+      <stop offset="0.4772" stop-color="#F8E600"/>
+      <stop offset="0.6258" stop-color="#F1D000"/>
+      <stop offset="0.7781" stop-color="#E7B100"/>
+      <stop offset="0.9318" stop-color="#DA8B00"/>
+      <stop offset="1" stop-color="#D37700"/>
+    </radialGradient>
+    <path fill="url(#XMLID_2_)" d="M10,5L10,2C8.397,2,4.277,2,3,2C3,3.592,3,12.408,3,14C4.527,14,11.473,14,13,14C13,12.622,13,6.921,13,5L10,5z"/>
+    <path fill="#FFFFFF" d="M10.607,2.021L10.618,4.414L13,4.414C12.58,3.994,11.057,2.471,10.607,2.021z"/>
+    <rect x="4" y="10" width="8" height="1"/>
+    <rect x="4" y="12" width="8" height="1"/>
+    <rect x="10" y="8" width="2" height="1"/>
+    <rect x="10" y="6" width="2" height="1"/>
+    <path d="M7.582,9.01L7.199,7.634L5.186,7.634L4.795,9.01L4,9.01L5.787,3L6.744,3L8.488,9.01L7.582,9.01zM7.039,7.043L6.201,3.898L5.348,7.043L7.039,7.043z"/>
+  </g>
+</svg>

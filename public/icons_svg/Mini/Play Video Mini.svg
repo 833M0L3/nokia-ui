@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="26" version="1.1" viewBox="0 0 26 26" width="26">
+  <g>
+    <rect fill="none" height="26" width="26"/>
+    <linearGradient gradientTransform="matrix(1 0 0 -1 285.6953 434.666)" gradientUnits="userSpaceOnUse" id="XMLID_19_" x1="-272.6953" x2="-272.6953" y1="478.5293" y2="457.6795">
+      <stop offset="0" stop-color="#FFFF00"/>
+      <stop offset="0.5918" stop-color="#F2BD00"/>
+      <stop offset="1" stop-color="#E88D00"/>
+    </linearGradient>
+    <polygon fill="url(#XMLID_19_)" points="23.426 10.402 2.574 19.176 2.574 1.63"/>
+    <path d="M2.021,0.796C1.742,0.981,1.574,1.294,1.574,1.63L1.574,19.177C1.574,19.512,1.742,19.823,2.019,20.01C2.298,20.196,2.652,20.229,2.96,20.099L23.812,11.326C24.183,11.17,24.424,10.806,24.424,10.404C24.424,10.002,24.183,9.638,23.812,9.482L2.962,0.708C2.652,0.577,2.3,0.61,2.021,0.796zM3.574,3.134C5.721,4.037,17.6,9.035,20.848,10.402C17.6,11.77,5.721,16.768,3.574,17.67C3.574,15.39,3.574,5.415,3.574,3.134z" fill="#FFFFFF"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_20_" x1="12.9995" x2="12.9995" y1="1.6299" y2="19.1763">
+      <stop offset="0" stop-color="#FEE103"/>
+      <stop offset="1" stop-color="#F74011"/>
+    </linearGradient>
+    <polygon fill="url(#XMLID_20_)" points="23.426 10.402 2.574 19.176 2.574 1.63"/>
+    <path d="M6.938,9.531C6.385,9.531,5.938,9.978,5.938,10.531L5.938,23.732C5.938,24.285,6.385,24.732,6.938,24.732L19.772,24.732C20.325,24.732,20.772,24.285,20.772,23.732L20.772,10.531C20.772,9.978,20.325,9.531,19.772,9.531L6.938,9.531z" fill="#FFFFFF"/>
+    <linearGradient gradientTransform="matrix(1 0 0 -1 286.417 435.6113)" gradientUnits="userSpaceOnUse" id="XMLID_21_" x1="-272.8726" x2="-272.8726" y1="424.1514" y2="412.8164">
+      <stop offset="0" stop-color="#85D2FD"/>
+      <stop offset="0.5735" stop-color="#2B88DC"/>
+      <stop offset="1" stop-color="#055AC3"/>
+    </linearGradient>
+    <rect fill="url(#XMLID_21_)" height="11.335" width="6.384" x="10.353" y="11.46"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_22_" x1="13.3716" x2="13.3716" y1="10.5352" y2="23.7026">
+      <stop offset="0" stop-color="#696969"/>
+      <stop offset="0.6991" stop-color="#141414"/>
+      <stop offset="1" stop-color="#141414"/>
+    </linearGradient>
+    <path d="M6.969,10.535L6.969,23.702L19.776,23.702L19.776,10.535L6.969,10.535zM18.877,13.405L17.062,13.405L17.062,11.432L18.877,11.432L18.877,13.405zM9.672,16.287L9.672,18.002L7.866,18.002L7.866,16.287L9.672,16.287zM7.866,15.742L7.866,13.951L9.672,13.951L9.672,15.742L7.866,15.742zM9.672,18.547L9.672,20.419L7.866,20.419L7.866,18.547L9.672,18.547zM10.451,20.419L10.451,18.547L10.451,18.002L10.451,16.287L10.451,15.742L10.451,13.951L10.451,13.405L10.451,11.432L16.281,11.432L16.281,22.805L10.451,22.805L10.451,20.9621L10.451,20.419zM17.062,18.547L18.877,18.547L18.877,20.419L17.062,20.419L17.062,18.547zM17.062,18.002L17.062,16.287L18.877,16.287L18.877,18.002L17.062,18.002zM17.062,15.742L17.062,13.951L18.877,13.951L18.877,15.742L17.062,15.742zM9.672,11.433L9.672,13.406L7.866,13.406L7.866,11.433L9.672,11.433zM7.866,20.963L9.672,20.963L9.672,22.806L7.866,22.806L7.866,20.963zM17.062,22.806L17.062,20.963L18.877,20.963L18.877,22.806L17.062,22.806z" fill="url(#XMLID_22_)"/>
+    <rect fill="#FFFFFF" height="4.313" width="1.828" x="17.045" y="11.419"/>
+    <rect fill="#FFFFFF" height="8.641" width="1.828" x="17.045" y="14.169"/>
+    <rect fill="#404040" height="0.578" width="2.166" x="16.876" y="14.769"/>
+    <rect fill="#1F1F1F" height="0.578" width="2.166" x="16.876" y="18.794"/>
+    <rect fill="#FFFFFF" height="4.313" width="1.828" x="7.842" y="11.419"/>
+    <rect fill="#FFFFFF" height="8.641" width="1.828" x="7.842" y="14.169"/>
+    <rect fill="#404040" height="0.578" width="2.068" x="7.722" y="14.769"/>
+    <rect fill="#1F1F1F" height="0.578" width="2.068" x="7.722" y="18.794"/>
+  </g>
+</svg>

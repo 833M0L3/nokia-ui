@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="13" viewBox="0 0 13 13" width="13">
+  <rect fill="none" height="13" width="13"/>
+  <path d="M6.5,3C5.119,3,4,4.119,4,5.5C4,6.881,5.119,8,6.5,8C7.881,8,9,6.881,9,5.5C9,4.119,7.881,3,6.5,3zM6.5,7C5.671,7,5,6.329,5,5.5C5,4.671,5.671,4,6.5,4C7.329,4,8,4.671,8,5.5C8,6.329,7.329,7,6.5,7z"/>
+  <path d="M5,1L5,4L8,4L8,1L5,1zM7,3L6,3L6,2L7,2L7,3z"/>
+  <rect height="3" width="1" x="6" y="9"/>
+  <line stroke="#000000" x1="10" x2="8.932" y1="11" y2="8.381"/>
+  <line stroke="#000000" x1="11.998" x2="10" y1="8.522" y2="6.52"/>
+  <line stroke="#000000" x1="4.083" x2="3.014" y1="8.371" y2="10.989"/>
+  <line stroke="#000000" x1="2.828" x2="0.83" y1="6.532" y2="8.535"/>
+</svg>

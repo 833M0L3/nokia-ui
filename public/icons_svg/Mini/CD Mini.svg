@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <path d="M1,16C1,24.271,7.729,31,16,31C24.271,31,31,24.271,31,16C31,7.729,24.271,1,16,1C7.729,1,1,7.729,1,16z" fill="#FFFFFF"/>
+  <circle cx="16" cy="16" r="13"/>
+  <path d="M4,16C4,22.617,9.383,28,16,28C22.617,28,28,22.617,28,16C28,9.383,22.617,4,16,4C9.383,4,4,9.383,4,16z" fill="#CCCCCC"/>
+  <path d="M19.701,12.548L24.647,7.602C22.474,5.429,19.474,4.083,16.166,4.083L16.166,11.083C17.547,11.083,18.797,11.643,19.701,12.548z" fill="#FFFFFF" opacity="0.58" stroke-opacity="0.58"/>
+  <path d="M26.335,10.003L20.25,13.48C20.462,13.849,20.627,14.245,20.739,14.667L27.509,12.861C27.239,11.85,26.845,10.891,26.335,10.003z" fill="#FFFFFF"/>
+  <path d="M12.156,27.255L14,20.493C13.589,20.382,13.192,20.219,12.815,20L9.304,26.063C10.211,26.588,11.168,26.987,12.156,27.255z" fill="#FFFFFF" opacity="0.5" stroke-opacity="0.5"/>
+  <circle cx="16" cy="16" fill="#4D4D4D" r="5"/>
+  <circle cx="16" cy="16" fill="#FFFFFF" r="2"/>
+  <rect fill="none" height="32" width="32"/>
+</svg>

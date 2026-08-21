@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="26" height="26" viewBox="0 0 26 26">
+  <switch>
+    <g>
+      <rect fill="none" width="26" height="26"/>
+      <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="11.9702" y1="0.75" x2="11.9702" y2="25.25">
+        <stop offset="0" stop-color="#FF1A00"/>
+        <stop offset="0.2921" stop-color="#FF1A00"/>
+        <stop offset="0.2934" stop-color="#FF2209"/>
+        <stop offset="0.3004" stop-color="#FF4B37"/>
+        <stop offset="0.3083" stop-color="#FF7262"/>
+        <stop offset="0.3168" stop-color="#FF9488"/>
+        <stop offset="0.3261" stop-color="#FFB1A8"/>
+        <stop offset="0.3363" stop-color="#FFCAC4"/>
+        <stop offset="0.3479" stop-color="#FFDDDA"/>
+        <stop offset="0.3613" stop-color="#FFEDEB"/>
+        <stop offset="0.378" stop-color="#FFF7F6"/>
+        <stop offset="0.4014" stop-color="#FFFDFD"/>
+        <stop offset="0.4663" stop-color="#FFFFFF"/>
+        <stop offset="0.4667" stop-color="#FFFCFB"/>
+        <stop offset="0.4717" stop-color="#FFD1CC"/>
+        <stop offset="0.4771" stop-color="#FFABA2"/>
+        <stop offset="0.4832" stop-color="#FF887B"/>
+        <stop offset="0.4897" stop-color="#FF6A59"/>
+        <stop offset="0.4968" stop-color="#FF513D"/>
+        <stop offset="0.5048" stop-color="#FF3D27"/>
+        <stop offset="0.514" stop-color="#FF2D15"/>
+        <stop offset="0.5252" stop-color="#FF2209"/>
+        <stop offset="0.5405" stop-color="#FF1C02"/>
+        <stop offset="0.5787" stop-color="#FF1A00"/>
+        <stop offset="0.6467" stop-color="#F71900"/>
+        <stop offset="0.7515" stop-color="#E21700"/>
+        <stop offset="0.8792" stop-color="#BF1300"/>
+        <stop offset="1" stop-color="#970F00"/>
+      </linearGradient>
+      <polyline fill="url(#XMLID_3_)" stroke="#000000" stroke-width="0.5" points="7.066 7.616 14.226 0.75 16.875 0.75 16.849 25.25 14.174 25.25 7.143 18.434"/>
+      <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="4.0088" y1="7.6157" x2="4.0088" y2="18.4336">
+        <stop offset="0" stop-color="#FF1A00"/>
+        <stop offset="0.0315" stop-color="#FF442F"/>
+        <stop offset="0.0691" stop-color="#FF6F5F"/>
+        <stop offset="0.1088" stop-color="#FF968A"/>
+        <stop offset="0.1499" stop-color="#FFB6AE"/>
+        <stop offset="0.1929" stop-color="#FFD1CC"/>
+        <stop offset="0.2383" stop-color="#FFE5E2"/>
+        <stop offset="0.2872" stop-color="#FFF4F2"/>
+        <stop offset="0.3421" stop-color="#FFFCFC"/>
+        <stop offset="0.4157" stop-color="#FFFFFF"/>
+        <stop offset="0.4176" stop-color="#FFF7F6"/>
+        <stop offset="0.4278" stop-color="#FFCEC8"/>
+        <stop offset="0.4393" stop-color="#FFA79D"/>
+        <stop offset="0.4516" stop-color="#FF8577"/>
+        <stop offset="0.465" stop-color="#FF6857"/>
+        <stop offset="0.4799" stop-color="#FF4F3B"/>
+        <stop offset="0.4966" stop-color="#FF3C25"/>
+        <stop offset="0.5162" stop-color="#FF2C14"/>
+        <stop offset="0.5404" stop-color="#FF2209"/>
+        <stop offset="0.5743" stop-color="#FF1C02"/>
+        <stop offset="0.6685" stop-color="#FF1A00"/>
+        <stop offset="1" stop-color="#970F00"/>
+      </linearGradient>
+      <rect x="0.875" y="7.616" fill="url(#XMLID_4_)" stroke="#000000" stroke-width="0.5" width="6.268" height="10.818"/>
+      <path fill="#D2D4CD" stroke="#000000" d="M24.217,20.281C23.597,20.906,22.589,20.911,21.963,20.291L9.98,8.411C9.354,7.79,9.35,6.781,9.97,6.157L9.97,6.157C10.59,5.532,11.598,5.527,12.223,6.147L24.207,18.027C24.833,18.647,24.837,19.656,24.217,20.281L24.217,20.281z"/>
+      <path fill="#D2D4CD" stroke="#000000" d="M24.125,5.69C24.748,6.313,24.747,7.321,24.125,7.944L12.19,19.873C11.567,20.496,10.558,20.495,9.936,19.873L9.936,19.873C9.313,19.25,9.314,18.242,9.936,17.619L21.872,5.689C22.495,5.067,23.503,5.067,24.125,5.69L24.125,5.69z"/>
+      <path fill="#D2D4CD" d="M19.532,15.615C19.108,16.045,18.302,15.936,17.73,15.372L14.681,12.365C14.109,11.801,13.989,10.996,14.412,10.567L14.412,10.567C14.835,10.138,15.642,10.247,16.213,10.811L19.263,13.819C19.835,14.381,19.955,15.186,19.532,15.615L19.532,15.615z"/>
+    </g>
+  </switch>
+</svg>

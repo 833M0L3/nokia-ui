@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" height="100%" version="1.1" viewBox="0 0 88 88" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect fill="none" height="88" width="88"/>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_1_" x1="30.252" x2="85.6015" y1="80.6182" y2="34.1744">
+<stop offset="0" style="stop-color:#1A1A1A"/>
+<stop offset="0.3258" style="stop-color:#E5E6E7"/>
+<stop offset="0.4551" style="stop-color:#FFFFFF"/>
+<stop offset="0.5562" style="stop-color:#FFFFFF"/>
+<stop offset="0.6629" style="stop-color:#E8E9EA"/>
+<stop offset="1" style="stop-color:#1A1A1A"/>
+</linearGradient>
+<path d="M72.261,18.843l4.192,4.433c0.798,0.871,0.576,1.816,0.576,1.816l-9.083,49.529  c0,0-0.258,2.635-3.544,2.26l-42.838-7.088l-3.79-4.045L72.261,18.843z" fill="url(#XMLID_1_)"/>
+<g>
+<path d="M71.156,18.319c-2.298-0.498-49.146-8.145-49.146-8.145s-2.85-0.596-3.418,2.406   s-7.944,43.058-7.944,43.058l7.127,10.109l42.681,7.062c0,0,3.133,0.727,3.69-2.222c0.559-2.947,9.085-49.496,9.085-49.496   S73.193,18.761,71.156,18.319z" fill="#FFFFFF"/>
+</g>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_2_" x1="20.0693" x2="65.3111" y1="17.6748" y2="62.9165">
+<stop offset="0" style="stop-color:#00D9FF"/>
+<stop offset="0.2416" style="stop-color:#00A6FF"/>
+<stop offset="1" style="stop-color:#002D5F"/>
+</linearGradient>
+<path d="M67.066,21.566C65.09,21.138,24.8,14.562,24.8,14.562  s-2.45-0.513-2.939,2.069S15.028,53.66,15.028,53.66l6.129,8.694l36.706,6.073c0,0,2.693,0.625,3.174-1.91S68.85,23.95,68.85,23.95  S68.818,21.945,67.066,21.566z" fill="url(#XMLID_2_)" stroke="#002D5F" stroke-width="0.25"/>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_3_" x1="25.3916" x2="56.5575" y1="52.0869" y2="63.4304">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="0.5337" style="stop-color:#FFFFFF"/>
+<stop offset="1" style="stop-color:#F2F2F2"/>
+</linearGradient>
+<polygon fill="url(#XMLID_3_)" points="24.219,62.844 27.091,47.418 57.419,52.56   54.922,67.922 46.484,66.547 48.207,56.63 39.821,55.256 37.953,65.109 " stroke="#002D5F" stroke-width="0.25"/>
+</svg>

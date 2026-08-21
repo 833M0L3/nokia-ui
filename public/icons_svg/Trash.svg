@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="80" version="1.1" viewBox="0 0 60 80" width="60">
+  <path d="M59.75,79.917L-0.25,79.917L-0.25-0.083L59.75-0.083L59.75,79.917z" fill="none"/>
+  <path d="M13.56,29.384L15.941,62.346C18.422,67.997,24.798,69.307,29.335,69.307C33.919,69.307,41.283,68.596,43.682,62.434L45.862,29.406C45.862,29.406,46.791,28.751,47.061,28.209C47.333,27.667,47.999,19.816,47.999,19.816C47.704,16.32,44.447,14.812,35.785,13.281L35.762,11.871L27.791,10.201L23.458,11.361L23.636,13.148C12.72,15.332,11.443,17.699,11.316,19.496C11.316,19.496,11.504,26.982,12.085,27.908C12.666,28.834,12.791,28.614,13.56,29.384z" fill="#FFFFFF"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_27_" x1="17.9805" x2="45.2063" y1="46.0566" y2="47.0073">
+    <stop offset="0" stop-color="#666666"/>
+    <stop offset="0.3315" stop-color="#717171"/>
+    <stop offset="0.7809" stop-color="#DDDDDD"/>
+    <stop offset="1" stop-color="#585858"/>
+  </linearGradient>
+  <path d="M44.307,26.739L41.914,60.751C41.68,63.727,35.948,66.691,29.589,66.691C22.856,66.628,17.859,63.763,17.624,60.79L15.018,26.739L44.307,26.739z" fill="url(#XMLID_27_)"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_28_" x1="13.3093" x2="46.006" y1="25.2452" y2="25.2452">
+    <stop offset="0" stop-color="#666666"/>
+    <stop offset="0.3315" stop-color="#717171"/>
+    <stop offset="0.7809" stop-color="#DDDDDD"/>
+    <stop offset="1" stop-color="#585858"/>
+  </linearGradient>
+  <path d="M46.009,19.326L13.32,19.326L13.633,26.46C15.412,28.948,24.051,31.265,29.547,31.116C35.043,30.966,43.686,29.106,45.555,26.544L46.009,19.326z" fill="url(#XMLID_28_)"/>
+  <radialGradient cx="23.3062" cy="16.8183" gradientUnits="userSpaceOnUse" id="XMLID_29_" r="26.1545">
+    <stop offset="0" stop-color="#DDDDDD"/>
+    <stop offset="1" stop-color="#636464"/>
+  </radialGradient>
+  <ellipse cx="29.713" cy="19.743" fill="url(#XMLID_29_)" rx="16.393" ry="5.23"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_30_" x1="21.8858" x2="28.5568" y1="9.3175" y2="16.6308">
+    <stop offset="0" stop-color="#DDDDDD"/>
+    <stop offset="1" stop-color="#636464"/>
+  </linearGradient>
+  <path d="M32.639,20.226L25.57,17.737L25.46,14.57L32.637,16.715L32.639,20.226" fill="url(#XMLID_30_)"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_31_" x1="25.46" x2="34.959" y1="15.1758" y2="15.1758">
+    <stop offset="0" stop-color="#DDDDDD"/>
+    <stop offset="1" stop-color="#636464"/>
+  </linearGradient>
+  <path d="M34.959,15.529L32.637,16.714L25.46,14.569L28.042,13.638L34.959,15.529z" fill="url(#XMLID_31_)"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_32_" x1="32.5039" x2="34.9356" y1="17.9639" y2="17.9639">
+    <stop offset="0" stop-color="#DDDDDD"/>
+    <stop offset="1" stop-color="#636464"/>
+  </linearGradient>
+  <path d="M32.516,20.335L34.875,18.576L34.936,15.593L32.504,16.812L32.516,20.335" fill="url(#XMLID_32_)"/>
+</svg>

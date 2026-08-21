@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" width="90" height="70" viewBox="0 0 90 70" xml:space="preserve">
+  <rect fill="none" width="90" height="70"/>
+  <g>
+    <path fill="#B2B2B2" d="M61.893,23.474L61.893,63.498C61.893,64.854,60.936,65.798,59.755,65.605L26.265,60.175C25.084,59.984,24.127,58.729,24.127,57.373L24.127,9.911C24.127,8.556,25.084,7.611,26.265,7.805L52.12,11.996L61.893,23.474z"/>
+    <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="19.6904" y1="17.501" x2="61.9622" y2="59.7727">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#5EA0F6"/>
+    </linearGradient>
+    <path fill="url(#XMLID_4_)" stroke="#2210D2" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="bevel" d="M59.362,25.15L59.35,61.425C59.35,62.676,58.509,63.547,57.471,63.37L28.042,58.36C27.005,58.182,26.164,57.026,26.164,55.774L26.164,11.984C26.164,10.734,27.005,9.863,28.042,10.04L48.736,13.557"/>
+    <linearGradient id="XMLID_5_" gradientUnits="userSpaceOnUse" x1="23.3965" y1="11.7222" x2="75.595" y2="48.272">
+      <stop offset="0" stop-color="#B2B2B2"/>
+      <stop offset="0.5562" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#3F3F3F"/>
+    </linearGradient>
+    <polygon fill="url(#XMLID_5_)" points="26.646 7.082 30.253 5.054 54.151 8.511 66.026 22.491 66.177 61.722 62.821 64.074 62.821 23.455 52.2 10.843"/>
+    <linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="46.5107" y1="16.772" x2="59.0524" y2="25.5537">
+      <stop offset="0" stop-color="#0000FF"/>
+      <stop offset="1" stop-color="#2210D2"/>
+    </linearGradient>
+    <polyline fill="url(#XMLID_6_)" stroke="#2210D2" stroke-width="0.75" stroke-linejoin="bevel" points="48.752 13.572 48.752 23.111 59.347 25.134"/>
+    <path fill="none" stroke="#000000" stroke-width="1.6574" d="M52.747,39.532C52.757,45.733,47.813,50.185,41.71,49.479C35.605,48.772,30.648,43.176,30.639,36.976C30.629,30.775,35.57,26.32,41.675,27.027C47.778,27.732,52.739,33.333,52.747,39.532z"/>
+    <path fill="none" stroke="#000000" stroke-width="1.105" stroke-linecap="round" d="M41.687,49.318C38.734,48.976,36.332,43.727,36.322,37.591C36.315,31.455,38.701,26.755,41.654,27.096C44.021,27.37,46.4,31.794,47.109,36.309"/>
+    <path fill="none" stroke="#000000" stroke-width="1.105" stroke-linecap="round" d="M41.708,43.788C35.655,43.089,30.743,40.112,30.739,37.144C30.734,34.172,35.639,32.331,41.692,33.031C45.932,33.52,50.004,35.412,52.108,37.621"/>
+    <line fill="none" stroke="#000000" stroke-width="1.105" stroke-linecap="round" x1="41.703" y1="46.49" x2="41.708" y2="49.32"/>
+    <line fill="none" stroke="#000000" stroke-width="1.105" stroke-linecap="round" x1="41.675" y1="27.027" x2="41.694" y2="40.362"/>
+    <line fill="none" stroke="#000000" stroke-width="1.105" stroke-linecap="round" x1="30.718" y1="36.905" x2="43.893" y2="38.428"/>
+    <path fill="url(#New_Pattern_Swatch_2)" d="M53.929,43.577L49.454,38.519C48.744,37.723,47.599,37.591,46.892,38.223L42.431,42.246C41.725,42.883,41.667,44.758,43.892,45.017L44.83,45.125L44.836,49.271C44.838,50.287,45.65,51.205,46.652,51.321L49.716,51.675C50.716,51.789,51.526,51.06,51.523,50.045L51.52,45.9L52.408,46.002C54.634,46.258,54.638,44.376,53.929,43.577z"/>
+  </g>
+</svg>

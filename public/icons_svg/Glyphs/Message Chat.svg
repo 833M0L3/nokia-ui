@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" width="15.587" height="14.971" viewBox="0 0 15.587 14.971" xml:space="preserve">
+          <g>
+            <path d="M7.072,14.963L8.453,14.961L11.733,12.242C13.547,12.205,15.587,10.202,15.587,7.887L15.587,5.944C15.587,3.451,13.338,1.43,10.846,1.43L5.943,1.43C3.451,1.43,1.429,3.451,1.429,5.944L1.429,7.887C1.429,10.379,3.45,12.741,5.943,12.741L8.47,12.741L7.077,14.946"/>
+            <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="2.4927" y1="1.0132" x2="12.292" y2="10.8126">
+              <stop offset="0.2191" stop-color="#FFFFFF"/>
+              <stop offset="0.4518" stop-color="#FDFDFD"/>
+              <stop offset="0.5888" stop-color="#F4F4F4"/>
+              <stop offset="0.701" stop-color="#E6E6E6"/>
+              <stop offset="0.7998" stop-color="#D2D2D2"/>
+              <stop offset="0.8898" stop-color="#B8B8B8"/>
+              <stop offset="0.9722" stop-color="#989898"/>
+              <stop offset="1" stop-color="#8C8C8C"/>
+            </linearGradient>
+            <path fill="url(#XMLID_2_)" stroke="#747879" stroke-width="0.8594" d="M9.846,0.43L4.943,0.43C2.451,0.43,0.429,2.451,0.429,4.944L0.429,6.887C0.429,9.38,2.45,11.401,4.943,11.401L7.47,11.401L7.47,14.071L10.959,11.247C12.91,10.749,14.36,8.993,14.36,6.887L14.36,4.944C14.361,2.451,12.338,0.43,9.846,0.43z"/>
+          </g>
+          <g>
+            <line fill="none" stroke="#747879" x1="2.983" y1="3.714" x2="7.028" y2="3.714"/>
+            <line fill="none" stroke="#747879" x1="2.983" y1="5.8" x2="11.01" y2="5.8"/>
+            <line fill="none" stroke="#747879" x1="2.983" y1="7.885" x2="11.01" y2="7.885"/>
+          </g>
+        </svg>

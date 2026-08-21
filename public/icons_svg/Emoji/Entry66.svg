@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M2,16C2,23.72,8.28,30,16,30C23.72,30,30,23.72,30,16C30,8.28,23.72,2,16,2C8.28,2,2,8.28,2,16z" fill="#FFFFFF"/>
+  <circle cx="16" cy="16" fill="#4D4D4D" r="12"/>
+  <path d="M5,16C5,22.065,9.935,27,16,27C22.065,27,27,22.065,27,16C27,9.935,22.065,5,16,5C9.935,5,5,9.935,5,16z" fill="#F3DA17"/>
+  <circle cx="21" cy="13" fill="#FFFFFF" r="4"/>
+  <circle cx="11" cy="13" fill="#FFFFFF" r="4"/>
+  <circle cx="16" cy="21.5" fill="#1E285A" r="3"/>
+  <circle cx="21" cy="13" fill="#1E285A" r="2"/>
+  <circle cx="11" cy="13" fill="#1E285A" r="2"/>
+</svg>

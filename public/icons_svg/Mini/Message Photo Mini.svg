@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="26" version="1.1" viewBox="0 0 26 26" width="26">
+  <g>
+    <path d="M12.868,2.617L1.441,2.617C0.902,2.617,0.465,3.054,0.465,3.593L0.465,19.41C0.465,19.949,0.902,20.386,1.441,20.386L24.554,20.386C25.093,20.386,25.53,19.949,25.53,19.41L25.53,3.593C25.53,3.054,25.093,2.617,24.554,2.617L12.868,2.617z" fill="#FFFFFF"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_5_" x1="12.9976" x2="12.9976" y1="3.5928" y2="19.4106">
+      <stop offset="0" stop-color="#FFE100"/>
+      <stop offset="0.2969" stop-color="#F2BD00"/>
+      <stop offset="0.8812" stop-color="#E88D00"/>
+      <stop offset="1" stop-color="#E88D00"/>
+    </linearGradient>
+    <polygon fill="url(#XMLID_5_)" points="24.555 19.41 1.441 19.41 1.441 3.593 12.868 3.593 24.555 3.593"/>
+    <path d="M10.16,12.109L16.007,12.032C16.122,12.029,16.233,11.989,16.321,11.916L25.031,3.956L24.381,3.163C24.381,3.163,16.076,10.792,15.81,11.013C15.502,11.017,10.653,11.075,10.329,11.08C10.049,10.852,1.534,3.163,1.534,3.163L0.889,3.96L9.829,11.994C9.922,12.071,10.038,12.11,10.16,12.109z" fill="#FFFFFF"/>
+    <path d="M24.769,3.288"/>
+    <path d="M15.493,11.538"/>
+    <path d="M1.089,3.426"/>
+    <path d="M9.646,11.613"/>
+    <rect fill="none" height="26" width="26"/>
+    <path d="M12.42,13.439C11.867,13.439,11.42,13.886,11.42,14.439L11.42,23.912C11.42,24.465,11.867,24.912,12.42,24.912L24.956,24.912C25.509,24.912,25.956,24.465,25.956,23.912L25.956,14.439C25.956,13.886,25.509,13.439,24.956,13.439L12.42,13.439z" fill="#FFFFFF"/>
+    <linearGradient gradientTransform="matrix(1 0 0 -1 211.9092 329.3262)" gradientUnits="userSpaceOnUse" id="XMLID_6_" x1="-202.0791" x2="-184.3367" y1="310.1504" y2="310.1504">
+      <stop offset="0" stop-color="#BFF4FF"/>
+      <stop offset="0.3644" stop-color="#7CC4F4"/>
+      <stop offset="1" stop-color="#006ADF"/>
+    </linearGradient>
+    <rect fill="url(#XMLID_6_)" height="9.473" width="12.536" x="12.42" y="14.439"/>
+    <rect fill="#001EFF" height="2.637" width="12.552" x="12.397" y="21.259"/>
+    <path d="M14.899,20.18C14.899,20.18,16.846,20.539,18.974,20.479C21.101,20.419,22.808,20.24,22.808,20.24L21.52,21.408L15.247,21.408L14.899,20.18z" fill="#FFD63F"/>
+    <polygon fill="#FFFFFF" points="22.298 20.183 19.183 14.822 19.422 20.304"/>
+    <polygon fill="#FFFFFF" points="19.065 20.159 14.484 18.94 18.917 15.08"/>
+  </g>
+</svg>

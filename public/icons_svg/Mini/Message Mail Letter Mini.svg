@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+  <g>
+    <rect fill="none" width="16" height="16"/>
+    <rect x="2" y="3" width="13" height="12"/>
+    <radialGradient id="XMLID_2_" cx="2.124" cy="4.1152" r="14.9301" fx="2.124" fy="4.1152" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEF700"/>
+      <stop offset="1" stop-color="#D37700"/>
+    </radialGradient>
+    <rect x="2" y="4" fill="url(#XMLID_2_)" width="12" height="10"/>
+    <path d="M13,6.75C13,6.888,12.888,7,12.75,7L10.25,7C10.112,7,10,6.888,10,6.75L10,5.25C10,5.112,10.112,5,10.25,5L12.75,5C12.888,5,13,5.112,13,5.25L13,6.75z"/>
+    <rect x="8" y="9" fill="#381C01" width="5" height="1"/>
+    <rect x="8" y="11" fill="#381C01" width="5" height="1"/>
+    <polygon fill="#FFFFFF" points="5 4 5 13 2 13 2 10 1 10 1 7 0 7 0 4"/>
+    <rect x="0.857" y="5" width="4.143" height="1"/>
+    <rect x="1.856" y="8" width="3.144" height="1"/>
+    <rect x="2.856" y="11" width="2.144" height="1"/>
+  </g>
+</svg>

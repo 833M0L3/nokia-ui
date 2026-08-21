@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="100%" version="1.1" viewBox="0 0 113.637 113.637" width="100%">
+  <rect fill="none" height="113.637" width="113.637"/>
+  <polyline fill="#FFFFFF" points="55.53 99.477 11.519 33.049 11.026 28.142 28.697 18.161 36.06 16.035 74.671 15.871 78.6 17.017 82.361 18.979 101.831 30.105 55.53 99.477"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_46_" x1="10.6729" x2="101.4823" y1="58.4399" y2="58.4399">
+    <stop offset="0" stop-color="#FF0000"/>
+    <stop offset="0.2" stop-color="#FFFF00"/>
+    <stop offset="0.4" stop-color="#00FF00"/>
+    <stop offset="0.6" stop-color="#00FFFF"/>
+    <stop offset="0.8" stop-color="#0000FF"/>
+    <stop offset="1" stop-color="#FF02FF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_46_)" opacity="0.09" points="10.673 28.91 28.343 18.929 35.706 16.802 74.317 16.641 78.247 17.783 82.009 19.749 101.479 30.873 55.176 100.245 11.164 33.817"/>
+  <path d="M55.02,99.919" fill="#FFFFFF" opacity="0.09"/>
+  <line fill="#FFFFFF" opacity="0.09" x1="49.783" x2="69.908" y1="38.072" y2="37.58"/>
+  <polygon fill="#FFFFFF" opacity="0.09" points="70.399 37.747 91.833 35.62 76.779 21.71 60.583 23.183"/>
+  <polyline fill="#FFFF00" opacity="0.13" points="49.293 22.855 41.93 22.855 32.113 37.416 49.783 38.072"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_47_" x1="12.0074" x2="55.4248" y1="66.2205" y2="66.2205">
+    <stop offset="0" stop-color="#1C38F7"/>
+    <stop offset="1" stop-color="#00CFFF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_47_)" points="12.008 33.081 32.393 36.727 55.424 99.366"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_48_" x1="61.5152" x2="98.8175" y1="86.7134" y2="30.8619">
+    <stop offset="0" stop-color="#1C38F7"/>
+    <stop offset="1" stop-color="#00CFFF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_48_)" points="92.038 35.907 101.625 30.805 55.251 101.2"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_49_" x1="32.3927" x2="55.593" y1="68.3756" y2="68.3756">
+    <stop offset="0" stop-color="#1C38F7"/>
+    <stop offset="1" stop-color="#00CFFF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_49_)" opacity="0.37" points="50.288 37.388 32.393 36.727 55.592 100.03"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_50_" x1="56.2561" x2="93.0436" y1="67.2148" y2="67.2148">
+    <stop offset="0" stop-color="#1C38F7"/>
+    <stop offset="1" stop-color="#00CFFF"/>
+  </linearGradient>
+  <polyline fill="url(#XMLID_50_)" opacity="0.3" points="71.165 37.058 93.042 34.571 56.255 99.863"/>
+  <polygon fill="#FFFFFF" points="50.288 37.388 70.671 36.892 55.592 100.03"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_51_" x1="11.0153" x2="30.5711" y1="25.5365" y2="25.5365">
+    <stop offset="0.0219" stop-color="#0000FF"/>
+    <stop offset="1" stop-color="#FF02FF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_51_)" opacity="0.25" points="12.008 33.081 30.571 20.321 28.912 18 11.016 28.108"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_52_" x1="77.7955" x2="102.6543" y1="26.6962" y2="26.6962">
+    <stop offset="0" stop-color="#FF0000"/>
+    <stop offset="1" stop-color="#FF02FF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_52_)" opacity="0.04" points="93.042 34.571 77.794 21.314 83.265 18.83 102.651 29.434"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="XMLID_53_" x1="12.0074" x2="42.3335" y1="28.3542" y2="28.3542">
+    <stop offset="0.1366" stop-color="#00FF00"/>
+    <stop offset="0.8" stop-color="#0000FF"/>
+    <stop offset="1" stop-color="#FF02FF"/>
+  </linearGradient>
+  <polygon fill="url(#XMLID_53_)" opacity="0.25" points="32.393 36.727 12.008 33.081 30.401 19.99 42.333 21.978"/>
+  <polygon fill="#0000FF" opacity="0.04" points="25.135 24.592 29.942 36.689 55.955 100.157 90.785 35.109 101.779 30.08 77.794 21.314 61.759 22.604 41.542 23.103"/>
+  <radialGradient cx="55.9076" cy="19.2241" gradientUnits="userSpaceOnUse" id="XMLID_54_" r="19.2366">
+    <stop offset="0" stop-color="#CBFEFE"/>
+    <stop offset="1" stop-color="#64C7FE"/>
+  </radialGradient>
+  <polyline fill="url(#XMLID_54_)" points="28.912 18 30.401 19.99 41.876 22.13 49.624 22.282 62.236 22.588 77.794 21.314 82.902 18.636 74.671 15.871 35.648 16.053"/>
+</svg>

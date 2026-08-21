@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" height="100%" version="1.1" viewBox="-0.998 -0.181 89 89" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect fill="none" height="88" width="88"/>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_1_" x1="18.0967" x2="79.7395" y1="81.1841" y2="29.4596">
+<stop offset="0" style="stop-color:#1A1A1A"/>
+<stop offset="0.3258" style="stop-color:#E5E6E7"/>
+<stop offset="0.4551" style="stop-color:#FFFFFF"/>
+<stop offset="0.5562" style="stop-color:#FFFFFF"/>
+<stop offset="0.6629" style="stop-color:#E8E9EA"/>
+<stop offset="1" style="stop-color:#1A1A1A"/>
+</linearGradient>
+<path d="M71.729,19.913c0,0,6.074,8.638,6.074,8.639c11.754,23.508-16.881,44.337-37.84,29.298  c-0.002,0-3.948,2.771-3.948,2.771s0.215,1.054-0.409,1.404c0,0-19.373,14.294-19.371,14.295c-1.195,0.991-2.694-0.566-2.694-0.566  l-5.622-7.055L71.729,19.913z" fill="url(#XMLID_1_)"/>
+<g>
+<path d="M54.238,11.4c31.344,2.676,29.566,45.493-0.161,47.765C22.527,59.438,20.023,12.806,54.238,11.4z" fill="#FFFFFF"/>
+</g>
+<g>
+<path d="M8.094,68.959c-1.088-1.61-2.648-5.688-1.654-6.527L27.802,47.47c0.65-0.316,1.444,0.341,1.444,0.341   l4.322-3.152l5.017,7.78l-3.855,3.031c0,0-0.106,1.176-0.783,1.741L13.489,72.179C12.158,72.908,9.028,70.343,8.094,68.959z" fill="#FFFFFF"/>
+</g>
+<linearGradient gradientUnits="userSpaceOnUse" id="XMLID_2_" x1="20.3477" x2="28.3143" y1="52.5249" y2="60.4916">
+<stop offset="0" style="stop-color:#00D9FF"/>
+<stop offset="0.2416" style="stop-color:#00A6FF"/>
+<stop offset="1" style="stop-color:#002D5F"/>
+</linearGradient>
+<path d="M9.9,67.438C8.976,66.07,8.154,64.594,9,63.881l19.255-13.92c0.554-0.27,1.227,0.29,1.227,0.29  l8.179-6.072l2.787,4.182l-8.079,6.232c0,0,0.226,0.678-0.351,1.158L13.01,69.49C11.878,70.108,10.693,68.616,9.9,67.438z" fill="url(#XMLID_2_)"/>
+<radialGradient cx="47.8662" cy="26.8052" gradientUnits="userSpaceOnUse" id="XMLID_3_" r="26.6779">
+<stop offset="0" style="stop-color:#E5E5E5"/>
+<stop offset="0.3" style="stop-color:#C7C7C7"/>
+<stop offset="1" style="stop-color:#8C8C8C"/>
+</radialGradient>
+<path d="M54.093,14.982c26.643,2.275,25.131,38.668-0.137,40.6  C27.139,55.814,25.011,16.177,54.093,14.982z" fill="url(#XMLID_3_)" stroke="#3F3F3F" stroke-width="0.25"/>
+</svg>

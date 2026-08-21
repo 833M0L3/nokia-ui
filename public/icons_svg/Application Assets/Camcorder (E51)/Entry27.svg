@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="13" viewBox="0 0 13 13" width="13">
+  <rect fill="none" height="13" width="13"/>
+  <path d="M6.5,4C5.119,4,4,5.119,4,6.5C4,7.881,5.119,9,6.5,9C7.881,9,9,7.881,9,6.5C9,5.119,7.881,4,6.5,4zM6.5,8.167C5.58,8.167,4.833,7.42,4.833,6.5C4.833,5.58,5.58,4.833,6.5,4.833C7.42,4.833,8.167,5.58,8.167,6.5C8.167,7.42,7.42,8.167,6.5,8.167z"/>
+  <rect height="1.979" width="0.999" x="5.997" y="0.996"/>
+  <rect height="1.979" width="0.999" x="6" y="9.991"/>
+  <rect height="0.999" width="1.979" x="9.997" y="6.009"/>
+  <rect height="0.999" width="1.979" x="1.005" y="6.009"/>
+  <rect height="0.999" transform="matrix(-0.7072 0.707 -0.707 -0.7072 18.8594 -1.1966)" width="1.979" x="8.688" y="2.807"/>
+  <rect height="0.999" transform="matrix(-0.7072 0.707 -0.707 -0.7072 12.5014 14.1609)" width="1.979" x="2.329" y="9.17"/>
+  <rect height="0.999" transform="matrix(0.7071 0.7071 -0.7071 0.7071 9.6724 -3.9913)" width="1.98" x="8.664" y="9.181"/>
+  <rect height="0.999" transform="matrix(0.7072 0.707 -0.707 0.7072 3.3138 -1.3577)" width="1.979" x="2.306" y="2.823"/>
+</svg>

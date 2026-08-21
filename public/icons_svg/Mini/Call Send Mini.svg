@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" version="1.1" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <polygon fill="#FFFFFF" points="32 15.172 23.828 7 8.171 7 0 15.172 0 18 6.171 18 1 23.172 1 26 31 26"/>
+  <polygon fill="#00458D" points="13 14 19 14 29 24 3 24"/>
+  <polygon fill="#359A2A" points="9 9 2 16 9 16 13 12 19 12 23 16 30 16 23 9"/>
+  <circle cx="16" cy="19" fill="#FFFFFF" r="3"/>
+  <path d="M19.172,14C19.172,14,22.93,17.758,23.172,18C21.162,20.01,12.172,29,12.172,29L23,29C23,29,26.199,24.63,28,22.828C28.242,23.07,32,26.828,32,26.828L32,14L19.172,14z" fill="#FFFFFF"/>
+  <polygon fill="#F5A916" points="17 27 26 18 24 16 30 16 30 22 28 20 21 27"/>
+</svg>

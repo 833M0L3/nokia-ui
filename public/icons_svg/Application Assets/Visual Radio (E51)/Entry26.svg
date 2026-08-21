@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.1" width="100%" height="100%" viewBox="0 0 100 72.225">
+  <switch>
+    <g>
+      <rect y="-0.112" fill="none" width="100" height="72.225"/>
+      <path fill="#0A2850" opacity="0.5" d="M15.667,61.828L83.029,62.244C83.029,62.244,88.668,61.984,88.5,52.066C88.334,42.146,88.834,17.041,88.834,17.041C88.834,17.041,88,12.394,84.834,9.603C81.666,6.813,92.626,13.888,92.917,18.886C93.134,22.606,93,56.097,93,56.097C93,56.097,93.07,63.941,85.834,65.549C78.166,67.252,23.417,66.09,23.417,66.09C23.417,66.09,16.667,66.323,15.667,61.828z"/>
+      <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="49.1938" y1="22.5754" x2="49.1938" y2="76.6335" gradientTransform="matrix(1 0 0 -1 0 85.1118)">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="0.1629" stop-color="#FFFFFF"/>
+        <stop offset="0.5169" stop-color="#F2F2F2"/>
+        <stop offset="0.5825" stop-color="#EEEEEE"/>
+        <stop offset="0.646" stop-color="#E3E3E3"/>
+        <stop offset="0.7087" stop-color="#CFCFCF"/>
+        <stop offset="0.7707" stop-color="#B4B4B4"/>
+        <stop offset="0.8325" stop-color="#919191"/>
+        <stop offset="0.8939" stop-color="#656565"/>
+        <stop offset="0.954" stop-color="#333333"/>
+        <stop offset="1" stop-color="#080808"/>
+        <stop offset="1" stop-color="#080808"/>
+      </linearGradient>
+      <path fill="url(#XMLID_4_)" stroke="#000000" stroke-width="0.5226" d="M9.757,18.361C9.757,18.361,10.759,9.171,15.582,8.796C20.406,8.421,81.123,8.483,82.117,8.483C83.113,8.483,88.4,10.109,88.763,19.111C89.125,28.113,88.67,53.808,88.67,53.808C88.67,53.808,88.308,61.496,83.026,62.246C77.75,62.996,14.4,62.058,14.4,62.058C14.4,62.058,10.045,61.412,9.667,53.62C9.211,44.241,9.757,18.361,9.757,18.361z"/>
+      <path fill="#1451A6" stroke="#000000" stroke-width="0.5226" d="M9.799,17.902C9.799,17.902,10.801,8.712,15.624,8.337C20.448,7.962,81.164,8.024,82.16,8.024C83.156,8.024,88.441,9.65,88.805,18.652C89.17,27.654,88.715,53.349,88.715,53.349C88.715,53.349,88.35,61.037,83.07,61.787C77.793,62.537,14.442,61.599,14.442,61.599C14.442,61.599,10.087,60.953,9.709,53.16C9.253,43.783,9.799,17.902,9.799,17.902z"/>
+      <linearGradient id="XMLID_5_" gradientUnits="userSpaceOnUse" x1="49.377" y1="74.1331" x2="49.3769" y2="25.5764" gradientTransform="matrix(1 0 0 -1 0 85.1118)">
+        <stop offset="0" stop-color="#73F9FD"/>
+        <stop offset="0.2022" stop-color="#73F9FD"/>
+        <stop offset="0.3768" stop-color="#5FDCF8"/>
+        <stop offset="0.7534" stop-color="#2C92EC"/>
+        <stop offset="1" stop-color="#085EE3"/>
+      </linearGradient>
+      <path fill="url(#XMLID_5_)" d="M12.171,19.855C12.4,17.854,13.109,11.6,17.667,11.263C22.218,10.927,79.498,10.983,80.438,10.983C81.376,10.983,86.364,12.442,86.708,20.529C87.05,28.616,86.622,51.695,86.622,51.695C86.622,51.695,86.278,58.603,81.298,59.275C76.318,59.949,16.552,59.107,16.552,59.107C16.552,59.107,12.445,58.529,12.087,51.527C11.657,43.103,12.171,19.855,12.171,19.855z"/>
+      <linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="49.3354" y1="68.5032" x2="49.3354" y2="74.2532" gradientTransform="matrix(1 0 0 -1 0 85.1118)">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="0.0056" stop-color="#B2C4DB"/>
+        <stop offset="0.0056" stop-color="#B5C6DC"/>
+        <stop offset="0.0056" stop-color="#C7D4E5"/>
+        <stop offset="0.0056" stop-color="#E4EAF2"/>
+        <stop offset="0.2697" stop-color="#BADFEB"/>
+        <stop offset="0.5056" stop-color="#A1CBDF"/>
+        <stop offset="0.9301" stop-color="#98C4DB"/>
+        <stop offset="1" stop-color="#86C1DB"/>
+      </linearGradient>
+      <path fill="url(#XMLID_6_)" d="M12.878,16.609C12.878,16.609,84.593,16.609,85.755,16.609C86.005,16.609,85.192,11.128,79.376,10.936C73.241,10.733,19.234,10.983,18.254,11.077C17.864,11.114,14.521,10.917,12.878,16.609z"/>
+      <g display="none">
+        <g display="inline">
+          <path fill="#FFFFFF" d="M57.854,43.387C57.854,48.366,53.833,52.396,48.854,52.396C43.887,52.396,39.854,48.368,39.854,43.387C39.854,38.417,43.886,34.396,48.854,34.396C53.831,34.396,57.854,38.415,57.854,43.387z"/>
+          <rect x="46.865" y="23.531" fill="#FFFFFF" width="4" height="7.348"/>
+          <polygon fill="#FFFFFF" points="39.375 33.808 35.566 27.154 38.948 25.485 42.758 32.137"/>
+          <polygon fill="#FFFFFF" points="54.971 32.137 58.779 25.484 61.971 27.421 58.163 34.075"/>
+          <circle fill="#1451A6" cx="48.865" cy="43.408" r="4"/>
+        </g>
+      </g>
+      <circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6364" cx="49.338" cy="37.34" r="9"/>
+      <circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.1818" cx="47.353" cy="35.813" r="1.409"/>
+      <circle fill="#FF0000" stroke="#8F0000" stroke-width="0.192" cx="49.5" cy="37.388" r="9"/>
+      <circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.192" cx="46.751" cy="33.887" r="1.951"/>
+    </g>
+  </switch>
+</svg>

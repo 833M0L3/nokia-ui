@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-nokia {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.font-mono-retro {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Custom scrollbar for authentic Symbian look */
+.symbian-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.symbian-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.symbian-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+/* Nokia Glass Selection Box */
+.nokia-selection-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(220, 235, 255, 0.2) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),
+    0 4px 15px rgba(0, 40, 90, 0.3),
+    0 0 12px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+/* Softkey glow */
+.softkey-glow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Symbian S60 Grid item text shadow */
+.symbian-text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8), 0 0 4px rgba(0, 20, 50, 0.6);
+}
+
+/* CRT / LCD Scanline effect option */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.15) 50%
+  );
+  background-size: 100% 3px;
+}
+
+/* Nokia S40 Bounce Loader Animation matching reference photo */
+@keyframes nokia-bounce-lr {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(82px);
+  }
+}
+
+.animate-nokia-bounce-lr {
+  animation: nokia-bounce-lr 0.75s ease-in-out infinite alternate;
+}
+
+/* Neobrutalism Design System */
+.neo-grid-bg {
+  background-color: #f5f2e9;
+  background-image: radial-gradient(#18181b 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+.neo-card {
+  background-color: #ffffff;
+  border: 3.5px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
+  border-radius: 16px;
+}
+
+.neo-btn {
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  border-radius: 12px;
+  font-weight: 800;
+  transition: all 0.12s ease-in-out;
+  cursor: pointer;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.neo-pill {
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  border-radius: 9999px;
+  font-weight: 700;
+}

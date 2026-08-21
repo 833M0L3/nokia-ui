@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="32" viewBox="0 0 32 32" width="32">
+  <rect fill="none" height="32" width="32"/>
+  <path d="M6,2C3.794,2,2,3.795,2,6L2,25C2,27.206,3.794,29,6,29L26,29C28.206,29,30,27.206,30,25L30,6C30,3.795,28.206,2,26,2L6,2z" fill="#FFFFFF"/>
+  <path d="M28,25C28,26.104,27.104,27,26,27L6,27C4.896,27,4,26.104,4,25L4,6C4,4.896,4.896,4,6,4L26,4C27.104,4,28,4.896,28,6L28,25z" fill="#4D4D4D"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="6" y="11"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="6" y="17"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="6" y="23"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="23" y="11"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="6" y="5"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="23" y="5"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="23" y="17"/>
+  <rect fill="#FFFFFF" height="3" width="3" x="23" y="23"/>
+  <rect fill="#CCCCCC" height="6" width="10" x="11" y="4"/>
+  <rect fill="#CCCCCC" height="7" width="10" x="11" y="12"/>
+  <rect fill="#CCCCCC" height="6" width="10" x="11" y="21"/>
+</svg>

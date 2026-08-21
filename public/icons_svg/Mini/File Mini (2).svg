@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="26" version="1.1" viewBox="0 0 26 26" width="26">
+  <g>
+    <rect fill="none" height="26" width="26"/>
+    <path d="M3.827,0.936C3.274,0.936,2.827,1.384,2.827,1.936L2.827,24.083C2.827,24.636,3.274,25.083,3.827,25.083L21.84,25.083C22.393,25.083,22.84,24.636,22.84,24.083L22.84,6.578C22.84,6.311,22.734,6.056,22.544,5.868L17.863,1.225C17.675,1.039,17.423,0.935,17.159,0.935L3.827,0.935z" fill="#FFFFFF"/>
+    <polygon fill="url(#XMLID_38_)" points="21.84 6.578 21.84 24.083 3.827 24.083 3.827 1.936 17.159 1.936"/>
+    <path d="M16.224,1.783C16.224,2.278,16.224,7.39,16.224,7.557C16.391,7.557,21.471,7.557,21.966,7.557C21.966,7.319,21.966,6.818,21.966,6.58C21.483,6.58,17.198,6.58,17.198,6.58C17.198,6.58,17.198,2.267,17.198,1.783C16.96,1.783,16.462,1.783,16.224,1.783z" fill="#FFFFFF"/>
+    <rect fill="#FFFFFF" height="1.695" width="12.363" x="6.732" y="10.445"/>
+    <rect fill="#FFFFFF" height="1.694" width="12.292" x="6.732" y="14.049"/>
+    <rect fill="#FFFFFF" height="1.693" width="12.292" x="6.732" y="17.554"/>
+    <polyline fill="none" points="25.918 25.836 0.082 25.836 0.082 0 25.918 0"/>
+    <defs>
+      <linearGradient gradientTransform="matrix(1 0 0 -1 64.228 122.3809)" gradientUnits="userSpaceOnUse" id="XMLID_38_" x1="-51.3945" x2="-51.3945" y1="120.4453" y2="98.2979">
+        <stop offset="0" stop-color="#FFE100"/>
+        <stop offset="0.2969" stop-color="#F2BD00"/>
+        <stop offset="0.8812" stop-color="#E88D00"/>
+        <stop offset="1" stop-color="#E88D00"/>
+      </linearGradient>
+    </defs>
+  </g>
+</svg>

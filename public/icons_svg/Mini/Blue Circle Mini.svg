@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+  <g>
+    <rect fill="none" width="16" height="16"/>
+    <circle fill="#FFFFFF" cx="7.935" cy="8.425" r="7"/>
+    <radialGradient id="XMLID_2_" cx="1.0791" cy="1.5859" r="18.9226" fx="1.0791" fy="1.5859" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F2FFFF"/>
+      <stop offset="0.4663" stop-color="#9FF9FF"/>
+      <stop offset="1" stop-color="#3FCBFF"/>
+    </radialGradient>
+    <path fill="url(#XMLID_2_)" d="M1.935,8.425C1.935,10.028,2.559,11.534,3.692,12.668C4.826,13.801,6.333,14.425,7.935,14.425C9.537,14.425,11.044,13.801,12.178,12.668C13.311,11.534,13.935,10.027,13.935,8.425C13.935,5.116,11.244,2.425,7.935,2.425C4.626,2.425,1.935,5.116,1.935,8.425z"/>
+  </g>
+</svg>

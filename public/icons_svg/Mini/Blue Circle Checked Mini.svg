@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decoded by svgb2svg converter version 1.1.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+  <g>
+    <rect fill="none" width="16" height="16"/>
+    <circle fill="#FFFFFF" cx="7.935" cy="8.425" r="7"/>
+    <circle fill="url(#XMLID_2_)" cx="7.937" cy="8.417" r="6"/>
+    <polygon points="6.889 12.903 12.1 6.24 10.92 5.278 6.905 10.608 4.865 8.467 3.768 9.664"/>
+    <defs>
+      <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="3.6953" y1="4.1758" x2="12.1799" y2="12.6604">
+        <stop offset="0" stop-color="#F2FFFF"/>
+        <stop offset="0.4663" stop-color="#9FF9FF"/>
+        <stop offset="1" stop-color="#3FCBFF"/>
+      </linearGradient>
+    </defs>
+  </g>
+</svg>
