@@ -1,0 +1,25 @@
+# Cloudflare Pages Headers Configuration
+
+# Allow iframe embedding for local FreeJ2ME runner
+/freej2me/*
+  Access-Control-Allow-Origin: *
+  X-Frame-Options: SAMEORIGIN
+
+# Long-term cache immutable game jar files, icons, and wallpapers
+/freej2me/games/jar/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/freej2me/games/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/Graphics/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/icons_svg/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/status_icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/wallpaper/*
+  Cache-Control: public, max-age=31536000, immutable

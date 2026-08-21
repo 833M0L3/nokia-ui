@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "scan": "node public/freej2me/games/scan.js",
-    "build": "tsc && vite build",
+    "build": "npm run scan && tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
