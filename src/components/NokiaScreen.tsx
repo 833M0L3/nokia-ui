@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AppId, MenuItem, PhoneSettings } from '../types';
+import { AppId, MenuItem, NokiaVariantId, PhoneSettings } from '../types';
 import { StatusBar } from './StatusBar';
 import { SoftkeyBar } from './SoftkeyBar';
 import { MenuGrid } from './MenuGrid';
@@ -19,6 +19,7 @@ interface NokiaScreenProps {
   onCloseApp: () => void;
   settings: PhoneSettings;
   onUpdateSettings: (newSettings: Partial<PhoneSettings>) => void;
+  variant?: NokiaVariantId;
 }
 
 export const NokiaScreen: React.FC<NokiaScreenProps> = ({
@@ -30,6 +31,7 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
   onCloseApp,
   settings,
   onUpdateSettings,
+  variant = '3110c',
 }) => {
   const [screenView, setScreenView] = useState<'home' | 'menu' | 'app'>('home');
   const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(false);
@@ -140,7 +142,13 @@ export const NokiaScreen: React.FC<NokiaScreenProps> = ({
     } else if (optionId === 'sound') {
       onUpdateSettings({ soundEnabled: !settings.soundEnabled });
     } else if (optionId === 'about') {
-      alert('Nokia 3110 classic - Series 40 3rd Edition (S40v3) Web UI');
+      const variantNameMap: Record<NokiaVariantId, string> = {
+        '3110c': 'Nokia 3110 classic (S40v3)',
+        '3310': 'Nokia 3310 (Classic)',
+        '5300': 'Nokia 5300 XpressMusic',
+        'n73': 'Nokia N73 (Symbian S60)',
+      };
+      alert(`${variantNameMap[variant] || 'Nokia'} - Web UI`);
     } else if (optionId === 'exit') {
       if (activeApp) {
         onCloseApp();
