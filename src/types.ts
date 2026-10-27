@@ -45,6 +45,28 @@ export interface J2meGame {
   enableSound?: boolean;
 }
 
+export type NokiaVariantId = '3110c' | '3310' | '5300' | 'n73';
+
+export interface NokiaVariantInfo {
+  id: NokiaVariantId;
+  name: string;
+  badge: string;
+  badgeColor: string;
+  description: string;
+  defaultTheme?: ThemeId;
+}
+
+export interface PhoneFrameProps {
+  children: React.ReactNode;
+  onNavigate: (dir: 'UP' | 'DOWN' | 'LEFT' | 'RIGHT', isDown?: boolean) => void;
+  onSelect: (isDown?: boolean) => void;
+  onSoftkeyLeft: (isDown?: boolean) => void;
+  onSoftkeyRight: (isDown?: boolean) => void;
+  onEndCallKey?: (isDown?: boolean) => void;
+  onNumKey?: (num: string, isDown?: boolean) => void;
+  soundEnabled: boolean;
+}
+
 export interface Contact {
   id: string;
   name: string;

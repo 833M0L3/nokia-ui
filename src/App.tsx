@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Smartphone, Monitor, Volume2, VolumeX, Move, PhoneOff } from 'lucide-react';
-import { AppId, MenuItem, PhoneSettings } from './types';
+import { AppId, MenuItem, NokiaVariantId, PhoneSettings } from './types';
+import { NOKIA_VARIANTS } from './data/variants';
 import { NokiaScreen } from './components/NokiaScreen';
 import { PhoneFrame } from './components/PhoneFrame';
 import { playKeyClick, playSelectBeep } from './utils/audio';
@@ -32,6 +33,10 @@ export default function App() {
   const [activeApp, setActiveApp] = useState<AppId | null>(null);
   const [settings, setSettings] = useState<PhoneSettings>(DEFAULT_SETTINGS);
   const [viewStyle, setViewStyle] = useState<'phone' | 'screen'>('phone');
+  const [currentVariant, setCurrentVariant] = useState<NokiaVariantId>('3110c');
+
+  const activeVariantInfo =
+    NOKIA_VARIANTS.find((v) => v.id === currentVariant) || NOKIA_VARIANTS[0];
 
   // Dispatch hardware key events to active J2ME game
   const dispatchHwKey = (code: string, isDown: boolean = true, key?: string) => {
@@ -166,17 +171,45 @@ export default function App() {
   return (
     <div className="min-h-screen neo-grid-bg text-slate-900 flex flex-col items-center justify-between p-3 sm:p-6 relative overflow-x-hidden select-none font-nokia">
       {/* Neobrutalist Mobile-Friendly Header Bar */}
-      <header className="w-full max-w-5xl neo-card p-2.5 sm:p-4 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 z-20">
+      <header className="w-full max-w-5xl neo-card p-2.5 sm:p-4 flex flex-col lg:flex-row items-center justify-between gap-3 sm:gap-4 z-20">
         {/* Title Sticker Badge */}
         <div className="flex items-center gap-2">
           <div className="bg-[#ffe600] border-2.5 sm:border-3.5 border-black px-3 py-1 sm:px-4 sm:py-1.5 rounded-xl shadow-[3px_3px_0px_#000] sm:shadow-[4px_4px_0px_#000] flex items-center gap-2">
             <span className="font-extrabold text-sm sm:text-lg tracking-tight text-black">
-              NOKIA 3110 CLASSIC
+              {activeVariantInfo.name}
             </span>
-            <span className="bg-[#00f0ff] text-black font-extrabold text-[10px] sm:text-[11px] px-1.5 py-0.5 rounded-full border-1.5 sm:border-2 border-black shadow-[1.5px_1.5px_0px_#000]">
-              S40v3
+            <span
+              style={{ backgroundColor: activeVariantInfo.badgeColor }}
+              className="text-black font-extrabold text-[10px] sm:text-[11px] px-1.5 py-0.5 rounded-full border-1.5 sm:border-2 border-black shadow-[1.5px_1.5px_0px_#000]"
+            >
+              {activeVariantInfo.badge}
             </span>
           </div>
+        </div>
+
+        {/* Nokia Model Variant Switcher */}
+        <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+          {NOKIA_VARIANTS.map((v) => {
+            const isActive = v.id === currentVariant;
+            return (
+              <button
+                key={v.id}
+                onClick={() => {
+                  playSelectBeep(settings.soundEnabled);
+                  setCurrentVariant(v.id);
+                }}
+                className={`px-2.5 py-1 sm:px-3 sm:py-1.5 text-xs sm:text-sm neo-btn font-extrabold transition-all cursor-pointer flex items-center gap-1.5 ${
+                  isActive
+                    ? 'text-black shadow-[3px_3px_0px_#000] scale-102 ring-2 ring-black'
+                    : 'bg-white text-slate-700 shadow-[2px_2px_0px_#000] opacity-80 hover:opacity-100'
+                }`}
+                style={isActive ? { backgroundColor: v.badgeColor } : {}}
+                title={v.description}
+              >
+                <span>{v.name.replace('NOKIA ', '')}</span>
+              </button>
+            );
+          })}
         </div>
 
         {/* View Mode & Sound Controls */}
@@ -236,6 +269,7 @@ export default function App() {
           /* Phone Frame Container inside Mobile Responsive Neobrutalist Stage Box */
           <div className="neo-card p-2 sm:p-6 bg-white shadow-[6px_6px_0px_#000] sm:shadow-[8px_8px_0px_#000] w-full max-w-[370px]">
             <PhoneFrame
+              variant={currentVariant}
               onNavigate={handleNavigate}
               onSelect={handleSelect}
               onSoftkeyLeft={handleSoftkeyLeft}
@@ -245,6 +279,7 @@ export default function App() {
               soundEnabled={settings.soundEnabled}
             >
               <NokiaScreen
+                variant={currentVariant}
                 items={MENU_ITEMS}
                 selectedIndex={selectedIndex}
                 onSelectIndex={setSelectedIndex}
@@ -265,6 +300,7 @@ export default function App() {
           /* Standalone Full Screen UI Container inside Mobile Responsive Neobrutalist Card */
           <div className="w-full max-w-[370px] aspect-[240/350] h-[520px] sm:h-[590px] neo-card bg-black p-2 sm:p-2.5 shadow-[6px_6px_0px_#000] sm:shadow-[10px_10px_0px_#000] overflow-hidden">
             <NokiaScreen
+              variant={currentVariant}
               items={MENU_ITEMS}
               selectedIndex={selectedIndex}
               onSelectIndex={setSelectedIndex}
